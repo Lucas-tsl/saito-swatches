@@ -1,7 +1,6 @@
 /**
  * Saito Swatches — settings page.
  */
-/* global jQuery, wp, saitoSwatchesAdmin */
 (function ($) {
 	'use strict';
 

@@ -329,12 +329,12 @@ final class Saito_Swatches_Product {
 		if ( taxonomy_exists( $attribute ) ) {
 			foreach ( wc_get_product_terms( $product->get_id(), $attribute, array( 'fields' => 'all' ) ) as $term ) {
 				if ( in_array( $term->slug, $options, true ) ) {
-					$raw[] = array( $term->slug, apply_filters( 'woocommerce_variation_option_name', $term->name, $term, $attribute, $product ), Saito_Swatches_Terms::visual( $term->term_id ) );
+					$raw[] = array( $term->slug, apply_filters( 'woocommerce_variation_option_name', $term->name, $term, $attribute, $product ), Saito_Swatches_Terms::visual( $term->term_id ) ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound -- WooCommerce's own filter.
 				}
 			}
 		} else {
 			foreach ( $options as $option ) {
-				$raw[] = array( (string) $option, apply_filters( 'woocommerce_variation_option_name', $option, null, $attribute, $product ), Saito_Swatches_Terms::empty_visual() );
+				$raw[] = array( (string) $option, apply_filters( 'woocommerce_variation_option_name', $option, null, $attribute, $product ), Saito_Swatches_Terms::empty_visual() ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound -- WooCommerce's own filter.
 			}
 		}
 
@@ -796,11 +796,11 @@ final class Saito_Swatches_Product {
 
 		global $product;
 		$previous = $product;
-		$product  = $card_product; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited -- Restored right below.
+		$product  = $card_product; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound -- WooCommerce's global product, restored right below.
 		ob_start();
 		self::render_loop_swatches( $align );
 		$swatches = ob_get_clean();
-		$product  = $previous; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
+		$product  = $previous; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound -- WooCommerce's global product.
 
 		if ( '' !== $swatches ) {
 			self::enqueue_loop_assets();

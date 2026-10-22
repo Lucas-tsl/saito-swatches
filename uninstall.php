@@ -7,6 +7,9 @@
 
 defined( 'WP_UNINSTALL_PLUGIN' ) || exit;
 
+// Shared settings of Saito > Tools: removed only with the last Saito plugin.
+require __DIR__ . '/includes/saito-hub/uninstall.php';
+
 $saito_swatches_settings = get_option( 'saito_swatches_settings', array() );
 
 if ( empty( $saito_swatches_settings['keep_data'] ) ) {

@@ -2,7 +2,6 @@
  * Saito Swatches — front-end behaviour.
  * The hidden <select> remains the source of truth; swatches only drive it.
  */
-/* global jQuery, saitoSwatches */
 (function ($) {
 	'use strict';
 
@@ -121,7 +120,7 @@
 		if (cfg.hideSelectors) {
 			try {
 				$(cfg.hideSelectors).hide();
-			} catch (e) {
+			} catch {
 				// Invalid selector typed in the settings: ignore it.
 			}
 		}

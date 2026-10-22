@@ -26,6 +26,25 @@ define( 'SAITO_SWATCHES_FILE', __FILE__ );
 define( 'SAITO_SWATCHES_DIR', plugin_dir_path( __FILE__ ) );
 define( 'SAITO_SWATCHES_URL', plugin_dir_url( __FILE__ ) );
 
+// Shared "Saito" menu of the Saito plugins (see includes/saito-hub/hub.php).
+require_once SAITO_SWATCHES_DIR . 'includes/saito-hub/load.php';
+add_filter( 'saito_hub_plugins', 'saito_swatches_register_in_saito_hub' );
+
+/**
+ * Declare the plugin to the Saito menu (dashboard, documentation).
+ *
+ * @param array $plugins Active Saito plugins.
+ * @return array
+ */
+function saito_swatches_register_in_saito_hub( $plugins ) {
+	$plugins['swatches'] = array(
+		'version'      => SAITO_SWATCHES_VERSION,
+		'settings_url' => admin_url( 'admin.php?page=saito-swatches' ),
+		'menu_slugs'   => array( 'saito-swatches' ),
+	);
+	return $plugins;
+}
+
 require_once SAITO_SWATCHES_DIR . 'includes/class-saito-swatches-settings.php';
 require_once SAITO_SWATCHES_DIR . 'includes/class-saito-swatches-terms.php';
 require_once SAITO_SWATCHES_DIR . 'includes/class-saito-swatches-product.php';

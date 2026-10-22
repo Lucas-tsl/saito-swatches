@@ -20,6 +20,7 @@ form.variations_form:has(.saito-swatches) table.variations td {
 	border: 0;
 	background: none;
 }
+
 form.variations_form:has(.saito-swatches) table.variations th {
 	text-align: start;
 }
@@ -30,7 +31,7 @@ form.variations_form:has(.saito-swatches) table.variations th {
 	--saito-sw-border-width: 1px;
 	--saito-sw-radius: 0;
 	--saito-sw-image-height: 60px;
-	--saito-sw-border: currentColor;
+	--saito-sw-border: currentcolor;
 	--saito-sw-border-active: var(--saito-sw-border);
 	--saito-sw-bg: transparent;
 	--saito-sw-bg-active: var(--saito-sw-bg);
@@ -48,10 +49,12 @@ form.variations_form:has(.saito-swatches) table.variations th {
 	flex-wrap: wrap;
 	justify-content: var(--saito-sw-justify);
 }
+
 .saito-swatches[data-layout="grid"] {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
 }
+
 .saito-swatches[data-layout="stack"] {
 	display: flex;
 	flex-direction: column;
@@ -83,6 +86,7 @@ form.variations_form:has(.saito-swatches) table.variations th {
 	transition: opacity 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
 	position: relative;
 }
+
 .saito-swatches[data-content="row"] .saito-swatch {
 	flex-direction: row;
 	text-align: left;
@@ -93,6 +97,7 @@ form.variations_form:has(.saito-swatches) table.variations th {
 	background: var(--saito-sw-bg);
 	color: var(--saito-sw-text);
 }
+
 .saito-swatch:focus-visible {
 	outline: 2px solid var(--saito-sw-border-active);
 	outline-offset: 2px;
@@ -102,9 +107,11 @@ form.variations_form:has(.saito-swatches) table.variations th {
 .saito-swatches:has(.is-selected) .saito-swatch:not(.is-selected) {
 	opacity: var(--saito-sw-inactive-opacity);
 }
+
 .saito-swatches:has(.is-selected) .saito-swatch:not(.is-selected):hover {
 	opacity: 1;
 }
+
 .saito-swatch.is-selected,
 .saito-swatch.is-selected:hover,
 .saito-swatch.is-selected:focus {
@@ -116,13 +123,16 @@ form.variations_form:has(.saito-swatches) table.variations th {
 .saito-swatch.is-unavailable {
 	cursor: not-allowed;
 }
+
 .saito-swatches[data-unavailable="fade"] .saito-swatch.is-unavailable,
 .saito-swatches[data-unavailable="strike"] .saito-swatch.is-unavailable {
 	opacity: 0.3 !important;
 }
+
 .saito-swatches[data-unavailable="strike"] .saito-swatch.is-unavailable .saito-swatch__label {
 	text-decoration: line-through;
 }
+
 .saito-swatches[data-unavailable="hide"] .saito-swatch.is-unavailable {
 	display: none;
 }
@@ -131,6 +141,7 @@ form.variations_form:has(.saito-swatches) table.variations th {
 	display: block;
 	line-height: 0;
 }
+
 .saito-swatch__image {
 	display: block;
 	width: auto;
@@ -150,6 +161,7 @@ form.variations_form:has(.saito-swatches) table.variations th {
 	box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
 	flex: none;
 }
+
 .saito-swatch__icon.dashicons {
 	display: block;
 	width: var(--saito-sw-dot-size, 32px);
@@ -166,16 +178,19 @@ form.variations_form:has(.saito-swatches) table.variations th {
 	gap: 2px;
 	min-width: 0;
 }
+
 .saito-swatches[data-content="row"] .saito-swatch__text {
 	align-items: flex-start;
 	text-align: left;
 }
+
 /* Hierarchy: value name > subtitle (smaller, muted) > price (separated, bold). */
 .saito-swatch__label {
 	font-size: var(--saito-sw-label-size, 1em);
 	font-weight: 600;
 	line-height: 1.25;
 }
+
 .saito-swatch__subtitle {
 	font-size: var(--saito-sw-subtitle-size, 0.8125em);
 	font-weight: 400;
@@ -189,6 +204,7 @@ form.variations_form:has(.saito-swatches) table.variations th {
 .saito-swatches[data-shape="rounded"] .saito-swatch__image {
 	border-radius: 6px;
 }
+
 .saito-swatches[data-shape="square"] .saito-swatch__color,
 .saito-swatches[data-shape="square"] .saito-swatch__image {
 	border-radius: 0;
@@ -203,6 +219,7 @@ form.variations_form:has(.saito-swatches) table.variations th {
 	color: var(--saito-sw-price-color, inherit);
 	font-variant-numeric: tabular-nums;
 }
+
 .saito-swatch__price del {
 	opacity: 0.6;
 	margin-right: 4px;
@@ -212,17 +229,21 @@ form.variations_form:has(.saito-swatches) table.variations th {
 .saito-loop-swatches[data-align="center"] {
 	justify-content: center;
 }
+
 .saito-loop-swatches[data-align="right"] {
 	justify-content: flex-end;
 }
+
 .saito-loop-swatches {
 	--saito-loop-size: 22px;
+
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	gap: 6px;
 	margin: 6px 0;
 }
+
 .saito-loop-swatch {
 	display: inline-flex;
 	align-items: center;
@@ -237,41 +258,49 @@ form.variations_form:has(.saito-swatches) table.variations th {
 	overflow: hidden;
 	transition: box-shadow 0.15s ease;
 }
+
 .saito-loop-swatches[data-shape="rounded"] .saito-loop-swatch {
 	border-radius: 4px;
 }
+
 .saito-loop-swatches[data-shape="square"] .saito-loop-swatch {
 	border-radius: 0;
 }
+
 .saito-loop-swatch:hover,
 .saito-loop-swatch:focus-visible {
-	box-shadow: 0 0 0 2px currentColor;
+	box-shadow: 0 0 0 2px currentcolor;
 	outline: none;
 }
+
 .saito-loop-swatch__color,
 .saito-loop-swatch__media {
 	display: block;
 	width: var(--saito-loop-size);
 	height: var(--saito-loop-size);
 }
+
 .saito-loop-swatch__media img {
 	display: block;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
+
 .saito-loop-swatch__icon.dashicons {
 	width: var(--saito-loop-size);
 	height: var(--saito-loop-size);
 	font-size: calc(var(--saito-loop-size) * 0.8);
 	line-height: var(--saito-loop-size);
 }
+
 .saito-loop-swatch__text,
 .saito-loop-swatch--more {
 	padding: 0 6px;
 	font-size: 11px;
 	border-radius: 999px;
 }
+
 .saito-loop-swatch--more {
 	box-shadow: none;
 }
@@ -291,9 +320,11 @@ form.variations_form:has(.saito-swatches) table.variations th {
 .saito-swatch.is-out-of-stock .saito-swatch__price {
 	opacity: 0.45;
 }
+
 .saito-swatch.is-out-of-stock .saito-swatch__subtitle {
 	opacity: 0.3;
 }
+
 .saito-swatch__badge {
 	display: inline-block;
 	align-self: center;
@@ -308,6 +339,7 @@ form.variations_form:has(.saito-swatches) table.variations th {
 	text-transform: uppercase;
 	white-space: nowrap;
 }
+
 .saito-swatch__badge--corner {
 	position: absolute;
 	top: 6px;
@@ -318,10 +350,12 @@ form.variations_form:has(.saito-swatches) table.variations th {
 	z-index: 1;
 	pointer-events: none;
 }
+
 .saito-loop-swatch.is-out-of-stock {
 	position: relative;
 	opacity: 0.45;
 }
+
 .saito-loop-swatch.is-out-of-stock::after {
 	content: "";
 	position: absolute;
@@ -329,7 +363,7 @@ form.variations_form:has(.saito-swatches) table.variations th {
 	left: -2px;
 	right: -2px;
 	height: 1px;
-	background: currentColor;
+	background: currentcolor;
 	transform: rotate(-45deg);
 	pointer-events: none;
 }

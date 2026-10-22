@@ -1,7 +1,6 @@
 /**
  * Saito Swatches — "Saito Swatches" tab of the product edit screen.
  */
-/* global jQuery, wp, saitoSwatchesProduct */
 (function ($) {
 	'use strict';
 

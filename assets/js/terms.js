@@ -1,7 +1,6 @@
 /**
  * Saito Swatches — swatch fields on Products → Attributes → Configure terms.
  */
-/* global jQuery, wp, saitoSwatchesTerms */
 (function ($) {
 	'use strict';
 

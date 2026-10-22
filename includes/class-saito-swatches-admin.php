@@ -69,61 +69,26 @@ final class Saito_Swatches_Admin {
 	}
 
 	/**
-	 * Find the shared Saito top-level menu registered by another Saito plugin.
+	 * Parent menu: the shared "Saito" menu (includes/saito-hub/hub.php).
 	 *
-	 * @return string Parent slug, or empty string.
+	 * @return string
 	 */
 	private static function saito_parent() {
-		global $admin_page_hooks;
-
-		$parent = '';
-		if ( is_array( $admin_page_hooks ) ) {
-			if ( isset( $admin_page_hooks['saito'] ) ) {
-				$parent = 'saito';
-			} else {
-				foreach ( array_keys( $admin_page_hooks ) as $slug ) {
-					if ( self::SLUG !== $slug && 0 === strpos( (string) $slug, 'saito' ) ) {
-						$parent = (string) $slug;
-						break;
-					}
-				}
-			}
-		}
-
 		/**
 		 * Filters the parent menu slug the settings page is attached to.
-		 * Return an empty string to create a dedicated "Saito" menu.
 		 *
 		 * @since 1.0.0
 		 *
 		 * @param string $parent Parent menu slug.
 		 */
-		return (string) apply_filters( 'saito_swatches_parent_menu', $parent );
+		return (string) apply_filters( 'saito_swatches_parent_menu', saito_hub_menu_slug() );
 	}
 
 	/**
-	 * Menu icon (three bottles of increasing size), recoloured by WordPress.
-	 *
-	 * @return string
-	 */
-	private static function menu_icon() {
-		return 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZmlsbD0iYmxhY2siIGQ9Ik0yLjUgMTFoMy41YTEgMSAwIDAgMSAxIDF2NWExIDEgMCAwIDEtMSAxSDIuNWExIDEgMCAwIDEtMS0xdi01YTEgMSAwIDAgMSAxLTF6bTYtM2gzLjVhMSAxIDAgMCAxIDEgMXY4YTEgMSAwIDAgMS0xIDFIOC41YTEgMSAwIDAgMS0xLTFWOWExIDEgMCAwIDEgMS0xem02LTVIMThhMSAxIDAgMCAxIDEgMXYxM2ExIDEgMCAwIDEtMSAxaC0zLjVhMSAxIDAgMCAxLTEtMVY0YTEgMSAwIDAgMSAxLTF6Ii8+PC9zdmc+';
-	}
-
-	/**
-	 * Register the settings page.
+	 * Register the settings page under the shared "Saito" menu.
 	 */
 	public static function register_menu() {
-		$parent = self::saito_parent();
-		$title  = __( 'Saito Swatches', 'saito-swatches' );
-		$menu   = __( 'Swatches', 'saito-swatches' );
-
-		if ( '' === $parent ) {
-			add_menu_page( 'Saito', 'Saito', self::CAP, self::SLUG, array( __CLASS__, 'render_page' ), self::menu_icon(), 58 );
-			$parent = self::SLUG;
-		}
-
-		self::$hook = (string) add_submenu_page( $parent, $title, $menu, self::CAP, self::SLUG, array( __CLASS__, 'render_page' ) );
+		self::$hook = (string) add_submenu_page( self::saito_parent(), __( 'Saito Swatches', 'saito-swatches' ), __( 'Swatches', 'saito-swatches' ), self::CAP, self::SLUG, array( __CLASS__, 'render_page' ) );
 	}
 
 	/**
