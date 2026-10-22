@@ -1,6 +1,6 @@
 {
   "name": "saito-swatches",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "private": true,
   "description": "Swatches image, couleur ou icône pour les variations WooCommerce, prix à l unité et badge de rupture de stock.",
   "scripts": {
