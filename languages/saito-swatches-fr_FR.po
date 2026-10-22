@@ -1,0 +1,977 @@
+# Copyright (C) 2026 Troteseil Lucas
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Saito Swatches 1.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/saito-swatches\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-21 08:00+0000\n"
+"X-Domain: saito-swatches\n"
+"PO-Revision-Date: 2026-10-21 08:00+0000\n"
+"Language: fr_FR\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#. Plugin Name of the plugin
+#: includes/class-saito-swatches-admin.php:118 includes/class-saito-swatches-admin.php:498 includes/class-saito-swatches-product.php:396
+msgid "Saito Swatches"
+msgstr "Saito Swatches"
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/saito-swatches/"
+msgstr "https://fr.wordpress.org/plugins/saito-swatches/"
+
+#. Description of the plugin
+msgid "Replace WooCommerce variation dropdowns with image swatches and show a unit price (e.g. per 100 ml). Everything is editable from the admin, no template override needed."
+msgstr "Remplace les listes déroulantes des variations WooCommerce par des vignettes images et affiche un prix unitaire (ex. au 100 ml). Tout se règle depuis l’administration, sans surcharge de template."
+
+#. Author of the plugin
+msgid "Troteseil Lucas"
+msgstr "Troteseil Lucas"
+
+#. Author URI of the plugin
+msgid "https://profiles.wordpress.org/lucastsl/"
+msgstr "https://profiles.wordpress.org/lucastsl/"
+
+#: includes/class-saito-swatches-admin.php:67
+msgid "Settings"
+msgstr "Réglages"
+
+#: includes/class-saito-swatches-admin.php:119
+msgid "Swatches"
+msgstr "Vignettes"
+
+#: includes/class-saito-swatches-admin.php:174 includes/class-saito-swatches-product.php:422 includes/class-saito-swatches-terms.php:333
+msgid "Choose a swatch image"
+msgstr "Choisir l’image de la vignette"
+
+#: includes/class-saito-swatches-admin.php:175 includes/class-saito-swatches-product.php:423 includes/class-saito-swatches-terms.php:334
+msgid "Use this image"
+msgstr "Utiliser cette image"
+
+#: includes/class-saito-swatches-admin.php:176
+msgid "Unsaved changes"
+msgstr "Modifications non enregistrées"
+
+#: includes/class-saito-swatches-admin.php:177
+msgid "Sample"
+msgstr "Exemple"
+
+#: includes/class-saito-swatches-admin.php:178 includes/class-saito-swatches-admin.php:729 includes/class-saito-swatches-settings.php:173
+msgid "Out of stock"
+msgstr "Rupture"
+
+#: includes/class-saito-swatches-admin.php:191
+msgid "General"
+msgstr "Général"
+
+#: includes/class-saito-swatches-admin.php:192
+msgid "Attributes"
+msgstr "Attributs"
+
+#: includes/class-saito-swatches-admin.php:193
+msgid "Appearance"
+msgstr "Apparence"
+
+#: includes/class-saito-swatches-admin.php:194
+msgid "Texts"
+msgstr "Textes"
+
+#: includes/class-saito-swatches-admin.php:195
+msgid "Advanced"
+msgstr "Avancé"
+
+#: includes/class-saito-swatches-admin.php:335
+msgid "New value, e.g. 70 ml"
+msgstr "Nouvelle valeur, ex. 70 ml"
+
+#: includes/class-saito-swatches-admin.php:335
+msgid "Name of the new value"
+msgstr "Nom de la nouvelle valeur"
+
+#: includes/class-saito-swatches-admin.php:339 includes/class-saito-swatches-product.php:596 includes/class-saito-swatches-terms.php:354
+msgid "Choose image"
+msgstr "Choisir une image"
+
+#: includes/class-saito-swatches-admin.php:347 includes/class-saito-swatches-product.php:604
+msgid "Remove"
+msgstr "Retirer"
+
+#: includes/class-saito-swatches-admin.php:350 includes/class-saito-swatches-product.php:606 includes/class-saito-swatches-terms.php:419 includes/class-saito-swatches-terms.php:449
+msgid "Swatch color"
+msgstr "Couleur de la vignette"
+
+#: includes/class-saito-swatches-admin.php:354 includes/class-saito-swatches-product.php:609 includes/class-saito-swatches-terms.php:423 includes/class-saito-swatches-terms.php:453
+msgid "Swatch icon"
+msgstr "Icône de la vignette"
+
+#: includes/class-saito-swatches-admin.php:355 includes/class-saito-swatches-product.php:610 includes/class-saito-swatches-terms.php:378
+msgid "No icon"
+msgstr "Aucune icône"
+
+#: includes/class-saito-swatches-admin.php:362 includes/class-saito-swatches-admin.php:362 includes/class-saito-swatches-product.php:617 includes/class-saito-swatches-product.php:617
+msgid "Displayed label"
+msgstr "Libellé affiché"
+
+#: includes/class-saito-swatches-admin.php:363 includes/class-saito-swatches-admin.php:363 includes/class-saito-swatches-admin.php:688 includes/class-saito-swatches-admin.php:725
+msgid "Subtitle"
+msgstr "Sous-titre"
+
+#: includes/class-saito-swatches-admin.php:364 includes/class-saito-swatches-admin.php:364 includes/class-saito-swatches-product.php:618 includes/class-saito-swatches-product.php:618
+msgid "Quantity (unit price)"
+msgstr "Quantité (prix unitaire)"
+
+#: includes/class-saito-swatches-admin.php:368
+msgid "Delete this value"
+msgstr "Supprimer cette valeur"
+
+#: includes/class-saito-swatches-admin.php:382
+msgid "WCBoost Variation Swatches is active. It changes the same WooCommerce dropdowns after Saito Swatches, so its swatches can replace these ones. Deactivate it to let Saito Swatches handle every attribute."
+msgstr "WCBoost Variation Swatches est actif. Il modifie les mêmes listes déroulantes WooCommerce après Saito Swatches : ses vignettes peuvent donc remplacer celles-ci. Désactivez-le pour que Saito Swatches gère tous les attributs."
+
+#: includes/class-saito-swatches-admin.php:386
+msgid "Swatches by attribute"
+msgstr "Vignettes par attribut"
+
+#: includes/class-saito-swatches-admin.php:387
+msgid "No global attribute yet. Create one in Products → Attributes, then come back here."
+msgstr "Aucun attribut global pour l’instant. Créez-en un dans Produits → Attributs, puis revenez ici."
+
+#: includes/class-saito-swatches-admin.php:388
+msgid "Open Products → Attributes"
+msgstr "Ouvrir Produits → Attributs"
+
+#: includes/class-saito-swatches-admin.php:393
+msgid "Everything about your swatches is here: how each attribute is displayed, the image, color or icon of each value, its optional texts, and new values. These are the same data as in Products → Attributes → Configure terms. Values are shown in the order set in WooCommerce."
+msgstr "Tout ce qui concerne vos vignettes est ici : l’affichage de chaque attribut, l’image, la couleur ou l’icône de chaque valeur, ses textes facultatifs, et l’ajout de nouvelles valeurs. Ce sont les mêmes données que dans Produits → Attributs → Configurer les termes. Les valeurs s’affichent dans l’ordre défini dans WooCommerce."
+
+#: includes/class-saito-swatches-admin.php:417
+msgid "Configure terms in WooCommerce"
+msgstr "Configurer les termes dans WooCommerce"
+
+#: includes/class-saito-swatches-admin.php:421
+msgid "Swatch type"
+msgstr "Type de vignette"
+
+#. translators: %s: WooCommerce attribute type, e.g. "color".
+#: includes/class-saito-swatches-admin.php:434
+#, php-format
+msgid "WooCommerce type of this attribute: \"%s\" (set by another swatches plugin). Set it back to \"Select\" in Products → Attributes if that plugin is no longer used."
+msgstr "Type WooCommerce de cet attribut : « %s » (défini par une autre extension de vignettes). Remettez-le sur « Sélection » dans Produits → Attributs si cette extension n’est plus utilisée."
+
+#: includes/class-saito-swatches-admin.php:441 includes/class-saito-swatches-product.php:567
+msgid "Value"
+msgstr "Valeur"
+
+#: includes/class-saito-swatches-admin.php:442 includes/class-saito-swatches-product.php:568 includes/class-saito-swatches-terms.php:63
+msgid "Image"
+msgstr "Image"
+
+#: includes/class-saito-swatches-admin.php:443 includes/class-saito-swatches-product.php:569 includes/class-saito-swatches-terms.php:65
+msgid "Color"
+msgstr "Couleur"
+
+#: includes/class-saito-swatches-admin.php:444 includes/class-saito-swatches-product.php:570 includes/class-saito-swatches-terms.php:67
+msgid "Icon"
+msgstr "Icône"
+
+#: includes/class-saito-swatches-admin.php:445 includes/class-saito-swatches-product.php:571
+msgid "Texts (optional)"
+msgstr "Textes (facultatif)"
+
+#: includes/class-saito-swatches-admin.php:446
+msgid "Actions"
+msgstr "Actions"
+
+#: includes/class-saito-swatches-admin.php:458
+msgid "Add a value to this attribute"
+msgstr "Ajouter une valeur à cet attribut"
+
+#: includes/class-saito-swatches-admin.php:499
+msgid "Image swatches and unit price for WooCommerce variations."
+msgstr "Vignettes images et prix unitaire pour les variations WooCommerce."
+
+#: includes/class-saito-swatches-admin.php:503
+msgid "Documentation"
+msgstr "Documentation"
+
+#: includes/class-saito-swatches-admin.php:504
+msgid "Support"
+msgstr "Support"
+
+#: includes/class-saito-swatches-admin.php:511
+msgid "Settings sections"
+msgstr "Sections des réglages"
+
+#: includes/class-saito-swatches-admin.php:531
+msgid "First steps"
+msgstr "Premiers pas"
+
+#: includes/class-saito-swatches-admin.php:532
+msgid "Three steps and your variation dropdowns become image swatches."
+msgstr "Trois étapes et vos listes déroulantes de variations deviennent des vignettes images."
+
+#: includes/class-saito-swatches-admin.php:535
+msgid "Choose a swatch type"
+msgstr "Choisissez un type de vignette"
+
+#: includes/class-saito-swatches-admin.php:535
+msgid "In the Attributes tab, pick image, color, button or icon for each attribute."
+msgstr "Dans l’onglet Attributs, choisissez image, couleur, bouton ou icône pour chaque attribut."
+
+#: includes/class-saito-swatches-admin.php:536
+msgid "Give each value its visual"
+msgstr "Donnez son visuel à chaque valeur"
+
+#: includes/class-saito-swatches-admin.php:536
+msgid "Still in the Attributes tab: an image from your media library, a color or an icon. You can add new values there too."
+msgstr "Toujours dans l’onglet Attributs : une image de votre médiathèque, une couleur ou une icône. Vous pouvez aussi y ajouter de nouvelles valeurs."
+
+#: includes/class-saito-swatches-admin.php:537
+msgid "Save and open a variable product"
+msgstr "Enregistrez et ouvrez un produit variable"
+
+#: includes/class-saito-swatches-admin.php:537
+msgid "Attributes with at least one configured value show swatches; the others keep their dropdown."
+msgstr "Les attributs ayant au moins une valeur configurée affichent des vignettes ; les autres gardent leur liste déroulante."
+
+#: includes/class-saito-swatches-admin.php:539
+msgid "Open the Attributes tab"
+msgstr "Ouvrir l’onglet Attributs"
+
+#: includes/class-saito-swatches-admin.php:544
+msgid "Activation"
+msgstr "Activation"
+
+#: includes/class-saito-swatches-admin.php:545
+msgid "Enable swatches"
+msgstr "Activer les vignettes"
+
+#: includes/class-saito-swatches-admin.php:545
+msgid "Turn off to get the standard WooCommerce dropdowns back without losing your settings."
+msgstr "Désactivez pour retrouver les listes déroulantes WooCommerce standard sans perdre vos réglages."
+
+#: includes/class-saito-swatches-admin.php:548
+msgid "Variation form"
+msgstr "Formulaire de variations"
+
+#: includes/class-saito-swatches-admin.php:548
+msgid "How the WooCommerce form around the swatches behaves."
+msgstr "Comportement du formulaire WooCommerce autour des vignettes."
+
+#: includes/class-saito-swatches-admin.php:549
+msgid "Hide the attribute name"
+msgstr "Masquer le nom de l’attribut"
+
+#: includes/class-saito-swatches-admin.php:549
+msgid "The label shown before the swatches (e.g. \"Size\")."
+msgstr "Le libellé affiché avant les vignettes (ex. « Contenance »)."
+
+#: includes/class-saito-swatches-admin.php:550
+msgid "Hide the \"Clear\" link"
+msgstr "Masquer le lien « Effacer »"
+
+#: includes/class-saito-swatches-admin.php:551
+msgid "Reserved height under the swatches"
+msgstr "Hauteur réservée sous les vignettes"
+
+#: includes/class-saito-swatches-admin.php:551
+msgid "Space kept for the price and the add-to-cart button, which WooCommerce loads after the choice. Prevents layout shifts (CLS). 0 to disable."
+msgstr "Espace gardé pour le prix et le bouton d’ajout au panier, que WooCommerce affiche après le choix. Évite les décalages de mise en page (CLS). 0 pour désactiver."
+
+#: includes/class-saito-swatches-admin.php:554
+msgid "Unit price"
+msgstr "Prix unitaire"
+
+#: includes/class-saito-swatches-admin.php:554
+msgid "Shows a price per reference quantity under the selected variation (e.g. per 100 ml). The text is editable in the Texts tab."
+msgstr "Affiche un prix pour une quantité de référence sous la variation choisie (ex. au 100 ml). Le texte se modifie dans l’onglet Textes."
+
+#: includes/class-saito-swatches-admin.php:555
+msgid "Show the unit price"
+msgstr "Afficher le prix unitaire"
+
+#: includes/class-saito-swatches-admin.php:556
+msgid "Reference quantity"
+msgstr "Quantité de référence"
+
+#: includes/class-saito-swatches-admin.php:556
+msgid "100 gives a price per 100 ml if your values are in ml. The quantity of each value is read from its \"Quantity\" field, or from the first number in its name."
+msgstr "100 donne un prix au 100 ml si vos valeurs sont en ml. La quantité de chaque valeur vient de son champ « Quantité », sinon du premier nombre de son nom."
+
+#: includes/class-saito-swatches-admin.php:560
+msgid "Position"
+msgstr "Position"
+
+#: includes/class-saito-swatches-admin.php:563
+msgid "Under the add-to-cart button"
+msgstr "Sous le bouton d’ajout au panier"
+
+#: includes/class-saito-swatches-admin.php:564
+msgid "Next to the variation price"
+msgstr "À côté du prix de la variation"
+
+#: includes/class-saito-swatches-admin.php:568
+msgid "Also on simple products"
+msgstr "Aussi sur les produits simples"
+
+#: includes/class-saito-swatches-admin.php:568
+msgid "Uses the capacity set in the \"Saito Swatches\" tab of each product, or the field set in the Advanced tab (e.g. an ACF field)."
+msgstr "Utilise la contenance indiquée dans l’onglet « Saito Swatches » de chaque produit, ou le champ défini dans l’onglet Avancé (par exemple un champ ACF)."
+
+#: includes/class-saito-swatches-admin.php:569
+msgid "Also on shop and category pages"
+msgstr "Aussi sur les pages boutique et catégories"
+
+#: includes/class-saito-swatches-admin.php:569
+msgid "For simple products, next to their price in product lists."
+msgstr "Pour les produits simples, à côté de leur prix dans les listes de produits."
+
+#: includes/class-saito-swatches-admin.php:572
+msgid "Prices and shop pages"
+msgstr "Prix et pages boutique"
+
+#: includes/class-saito-swatches-admin.php:573
+msgid "Show the price in each swatch"
+msgstr "Afficher le prix dans chaque vignette"
+
+#: includes/class-saito-swatches-admin.php:573
+msgid "The lowest price of the variations with this value. Each product can change this in its \"Saito Swatches\" tab."
+msgstr "Le prix le plus bas des variations ayant cette valeur. Chaque produit peut modifier ce réglage dans son onglet « Saito Swatches »."
+
+#: includes/class-saito-swatches-admin.php:574
+msgid "Show swatches on shop and category pages"
+msgstr "Afficher les vignettes sur les pages boutique et catégories"
+
+#: includes/class-saito-swatches-admin.php:574
+msgid "Small swatches under the product price. Hovering one shows the variation image; clicking opens the product with this value selected."
+msgstr "Petites pastilles sous le prix du produit. Le survol affiche l’image de la variation ; le clic ouvre le produit avec cette valeur sélectionnée."
+
+#: includes/class-saito-swatches-admin.php:575
+msgid "Swatches shown per product"
+msgstr "Vignettes affichées par produit"
+
+#: includes/class-saito-swatches-admin.php:575
+msgid "The others are summed up as \"+3\"."
+msgstr "Les autres sont résumées en « +3 »."
+
+#: includes/class-saito-swatches-admin.php:576
+msgid "Size of shop page swatches"
+msgstr "Taille des pastilles en boutique"
+
+#: includes/class-saito-swatches-admin.php:580
+msgid "Position in block product grids"
+msgstr "Position dans les grilles de produits en blocs"
+
+#: includes/class-saito-swatches-admin.php:583
+msgid "After the price"
+msgstr "Après le prix"
+
+#: includes/class-saito-swatches-admin.php:584
+msgid "After the product name"
+msgstr "Après le nom du produit"
+
+#: includes/class-saito-swatches-admin.php:585
+msgid "After the image"
+msgstr "Après l’image"
+
+#: includes/class-saito-swatches-admin.php:587
+msgid "For shop and category pages built with WooCommerce blocks (Product Collection). Classic themes show the swatches under the price."
+msgstr "Pour les pages boutique et catégories construites avec les blocs WooCommerce (Collection de produits). Les thèmes classiques affichent les pastilles sous le prix."
+
+#: includes/class-saito-swatches-admin.php:602
+msgid "Layout"
+msgstr "Disposition"
+
+#: includes/class-saito-swatches-admin.php:606
+msgid "Swatches layout"
+msgstr "Disposition des vignettes"
+
+#: includes/class-saito-swatches-admin.php:609 includes/class-saito-swatches-admin.php:711
+msgid "In a row"
+msgstr "En ligne"
+
+#: includes/class-saito-swatches-admin.php:610
+msgid "Grid"
+msgstr "Grille"
+
+#: includes/class-saito-swatches-admin.php:611
+msgid "Stacked"
+msgstr "Empilées"
+
+#: includes/class-saito-swatches-admin.php:618
+msgid "Image and text"
+msgstr "Image et texte"
+
+#: includes/class-saito-swatches-admin.php:621
+msgid "Image above the text"
+msgstr "Image au-dessus du texte"
+
+#: includes/class-saito-swatches-admin.php:622
+msgid "Image beside the text"
+msgstr "Image à côté du texte"
+
+#: includes/class-saito-swatches-admin.php:629
+msgid "Alignment"
+msgstr "Alignement"
+
+#: includes/class-saito-swatches-admin.php:632
+msgid "Left"
+msgstr "Gauche"
+
+#: includes/class-saito-swatches-admin.php:633
+msgid "Center"
+msgstr "Centre"
+
+#: includes/class-saito-swatches-admin.php:634
+msgid "Right"
+msgstr "Droite"
+
+#: includes/class-saito-swatches-admin.php:636
+msgid "Used by the \"In a row\" layout."
+msgstr "Utilisé par la disposition « En ligne »."
+
+#: includes/class-saito-swatches-admin.php:639
+msgid "Space between swatches"
+msgstr "Espace entre les vignettes"
+
+#: includes/class-saito-swatches-admin.php:642 includes/class-saito-swatches-terms.php:518
+msgid "Swatch"
+msgstr "Vignette"
+
+#: includes/class-saito-swatches-admin.php:643
+msgid "Inner spacing"
+msgstr "Marge intérieure"
+
+#: includes/class-saito-swatches-admin.php:644
+msgid "Border width"
+msgstr "Épaisseur de la bordure"
+
+#: includes/class-saito-swatches-admin.php:645
+msgid "Corner radius"
+msgstr "Arrondi des coins"
+
+#: includes/class-saito-swatches-admin.php:650
+msgid "Full size"
+msgstr "Taille originale"
+
+#: includes/class-saito-swatches-admin.php:651
+msgid "Image file size"
+msgstr "Taille du fichier image"
+
+#: includes/class-saito-swatches-admin.php:651
+msgid "The file loaded by the browser. Pick the smallest one that stays sharp."
+msgstr "Le fichier chargé par le navigateur. Choisissez le plus petit qui reste net."
+
+#: includes/class-saito-swatches-admin.php:652
+msgid "Displayed image height"
+msgstr "Hauteur affichée de l’image"
+
+#: includes/class-saito-swatches-admin.php:653
+msgid "Color dot and icon size"
+msgstr "Taille des pastilles couleur et des icônes"
+
+#: includes/class-saito-swatches-admin.php:654
+msgid "Shape of dots and images"
+msgstr "Forme des pastilles et des images"
+
+#: includes/class-saito-swatches-admin.php:655
+msgid "Opacity of non-selected swatches"
+msgstr "Opacité des vignettes non sélectionnées"
+
+#: includes/class-saito-swatches-admin.php:659
+msgid "Unavailable combinations"
+msgstr "Combinaisons indisponibles"
+
+#: includes/class-saito-swatches-admin.php:662
+msgid "Faded"
+msgstr "Estompées"
+
+#: includes/class-saito-swatches-admin.php:663
+msgid "Faded and struck through"
+msgstr "Estompées et barrées"
+
+#: includes/class-saito-swatches-admin.php:664
+msgid "Hidden"
+msgstr "Masquées"
+
+#: includes/class-saito-swatches-admin.php:670 includes/class-saito-swatches-admin.php:729
+msgid "Out of stock badge"
+msgstr "Badge de rupture"
+
+#: includes/class-saito-swatches-admin.php:670
+msgid "A small badge on values whose variations are all out of stock. Its text is set in the Texts tab."
+msgstr "Un petit badge sur les valeurs dont toutes les variations sont en rupture. Son texte se règle dans l’onglet Textes."
+
+#: includes/class-saito-swatches-admin.php:671
+msgid "Show the badge on out-of-stock values"
+msgstr "Afficher le badge sur les valeurs en rupture"
+
+#: includes/class-saito-swatches-admin.php:671
+msgid "The value stays clickable, so customers can still see its price and stock message. Shop page swatches are faded and struck through."
+msgstr "La valeur reste cliquable : le client voit toujours son prix et le message de stock. Sur les pages boutique, la pastille est estompée et barrée."
+
+#: includes/class-saito-swatches-admin.php:675
+msgid "Badge position"
+msgstr "Position du badge"
+
+#: includes/class-saito-swatches-admin.php:678
+msgid "In the top corner of the swatch"
+msgstr "Dans le coin supérieur de la vignette"
+
+#: includes/class-saito-swatches-admin.php:679
+msgid "Under the text"
+msgstr "Sous le texte"
+
+#: includes/class-saito-swatches-admin.php:683
+msgid "Badge color"
+msgstr "Couleur du badge"
+
+#: includes/class-saito-swatches-admin.php:683
+msgid "Empty: dark grey. The text is white."
+msgstr "Vide : gris foncé. Le texte est blanc."
+
+#: includes/class-saito-swatches-admin.php:686
+msgid "Typography"
+msgstr "Typographie"
+
+#: includes/class-saito-swatches-admin.php:686
+msgid "Sizes of the texts inside a swatch. 0 keeps a size relative to your theme font."
+msgstr "Tailles des textes dans une vignette. 0 garde une taille relative à la police du thème."
+
+#: includes/class-saito-swatches-admin.php:687 includes/class-saito-swatches-terms.php:392
+msgid "Value name"
+msgstr "Nom de la valeur"
+
+#: includes/class-saito-swatches-admin.php:689
+msgid "Price"
+msgstr "Prix"
+
+#: includes/class-saito-swatches-admin.php:690
+msgid "Subtitle color"
+msgstr "Couleur du sous-titre"
+
+#: includes/class-saito-swatches-admin.php:690
+msgid "Empty: the text color, lighter."
+msgstr "Vide : la couleur du texte, plus claire."
+
+#: includes/class-saito-swatches-admin.php:691
+msgid "Price color"
+msgstr "Couleur du prix"
+
+#: includes/class-saito-swatches-admin.php:694
+msgid "Colors"
+msgstr "Couleurs"
+
+#: includes/class-saito-swatches-admin.php:694
+msgid "Leave a color empty to use the one from your theme."
+msgstr "Laissez une couleur vide pour utiliser celle de votre thème."
+
+#: includes/class-saito-swatches-admin.php:695
+msgid "Border"
+msgstr "Bordure"
+
+#: includes/class-saito-swatches-admin.php:696
+msgid "Border when selected"
+msgstr "Bordure une fois sélectionnée"
+
+#: includes/class-saito-swatches-admin.php:697
+msgid "Background"
+msgstr "Fond"
+
+#: includes/class-saito-swatches-admin.php:698
+msgid "Background when selected"
+msgstr "Fond une fois sélectionnée"
+
+#: includes/class-saito-swatches-admin.php:699
+msgid "Text"
+msgstr "Texte"
+
+#: includes/class-saito-swatches-admin.php:702 includes/class-saito-swatches-admin.php:774
+msgid "Mobile"
+msgstr "Mobile"
+
+#: includes/class-saito-swatches-admin.php:703
+msgid "Mobile below"
+msgstr "Mobile en dessous de"
+
+#: includes/class-saito-swatches-admin.php:703
+msgid "Screen width under which the mobile settings apply. 0 to disable."
+msgstr "Largeur d’écran sous laquelle les réglages mobile s’appliquent. 0 pour désactiver."
+
+#: includes/class-saito-swatches-admin.php:707
+msgid "Mobile layout"
+msgstr "Disposition sur mobile"
+
+#: includes/class-saito-swatches-admin.php:710
+msgid "Stacked, full width"
+msgstr "Empilées, pleine largeur"
+
+#: includes/class-saito-swatches-admin.php:712
+msgid "Two columns"
+msgstr "Deux colonnes"
+
+#: includes/class-saito-swatches-admin.php:716
+msgid "Mobile inner spacing"
+msgstr "Marge intérieure sur mobile"
+
+#: includes/class-saito-swatches-admin.php:724
+msgid "Texts shown to customers"
+msgstr "Textes affichés aux clients"
+
+#: includes/class-saito-swatches-admin.php:724
+msgid "Every text of the swatches can be changed here. Leave a field empty to hide that text."
+msgstr "Chaque texte des vignettes se modifie ici. Laissez un champ vide pour masquer ce texte."
+
+#: includes/class-saito-swatches-admin.php:725
+msgid "e.g. Eau de parfum"
+msgstr "ex. Eau de parfum"
+
+#: includes/class-saito-swatches-admin.php:725
+msgid "Shown under each value. A value can have its own subtitle in the Attributes tab."
+msgstr "Affiché sous chaque valeur. Une valeur peut avoir son propre sous-titre dans l’onglet Attributs."
+
+#: includes/class-saito-swatches-admin.php:726
+msgid "Unit price text"
+msgstr "Texte du prix unitaire"
+
+#: includes/class-saito-swatches-admin.php:726
+msgid "<code>{price}</code> is replaced by the price, formatted with your WooCommerce currency settings."
+msgstr "<code>{price}</code> est remplacé par le prix, au format de devise de WooCommerce."
+
+#: includes/class-saito-swatches-admin.php:727
+msgid "Image alternative text"
+msgstr "Texte alternatif de l’image"
+
+#: includes/class-saito-swatches-admin.php:727
+msgid "Read by screen readers and search engines. <code>{label}</code> is replaced by the value name, e.g. \"Bottle {label}\"."
+msgstr "Lu par les lecteurs d’écran et les moteurs de recherche. <code>{label}</code> est remplacé par le nom de la valeur, ex. « Flacon {label} »."
+
+#: includes/class-saito-swatches-admin.php:728
+msgid "Unavailable tooltip"
+msgstr "Infobulle « indisponible »"
+
+#: includes/class-saito-swatches-admin.php:728
+msgid "e.g. Out of stock"
+msgstr "ex. Rupture de stock"
+
+#: includes/class-saito-swatches-admin.php:728
+msgid "Shown when hovering a value that cannot be selected."
+msgstr "Affichée au survol d’une valeur qui ne peut pas être choisie."
+
+#: includes/class-saito-swatches-admin.php:729
+msgid "Shown on values whose variations are all out of stock, e.g. \"Sold out\" or \"Back soon\". Empty uses the default text. The badge can be turned off in the Appearance tab."
+msgstr "Affiché sur les valeurs dont toutes les variations sont en rupture, par exemple « Épuisé » ou « Bientôt de retour ». Vide : texte par défaut (« Rupture »). Le badge se désactive dans l’onglet Apparence."
+
+#: includes/class-saito-swatches-admin.php:730
+msgid "\"Clear\" link text"
+msgstr "Texte du lien « Effacer »"
+
+#: includes/class-saito-swatches-admin.php:730
+msgid "Clear"
+msgstr "Effacer"
+
+#: includes/class-saito-swatches-admin.php:730
+msgid "Used when the link is not hidden in the General tab. Empty keeps the WooCommerce text."
+msgstr "Utilisé quand le lien n’est pas masqué dans l’onglet Général. Vide, le texte de WooCommerce est conservé."
+
+#: includes/class-saito-swatches-admin.php:738
+msgid "Theme compatibility"
+msgstr "Compatibilité avec le thème"
+
+#: includes/class-saito-swatches-admin.php:739
+msgid "Extra CSS classes"
+msgstr "Classes CSS supplémentaires"
+
+#: includes/class-saito-swatches-admin.php:739
+msgid "Added to every swatch, to reuse styles from your theme (e.g. a font class)."
+msgstr "Ajoutées à chaque vignette, pour réutiliser des styles de votre thème (ex. une classe de police)."
+
+#: includes/class-saito-swatches-admin.php:740
+msgid "Elements to hide"
+msgstr "Éléments à masquer"
+
+#: includes/class-saito-swatches-admin.php:740
+msgid "CSS selectors, separated by commas, hidden on product pages that show swatches (e.g. a unit price already added by your theme)."
+msgstr "Sélecteurs CSS, séparés par des virgules, masqués sur les fiches produit qui affichent des vignettes (ex. un prix unitaire déjà ajouté par votre thème)."
+
+#: includes/class-saito-swatches-admin.php:741
+msgid "Load on every page"
+msgstr "Charger sur toutes les pages"
+
+#: includes/class-saito-swatches-admin.php:741
+msgid "Needed only if variation forms appear outside product pages (quick view, shop page)."
+msgstr "Utile seulement si des formulaires de variations apparaissent hors des fiches produit (aperçu rapide, page boutique)."
+
+#: includes/class-saito-swatches-admin.php:742
+msgid "Capacity field of products"
+msgstr "Champ de contenance des produits"
+
+#: includes/class-saito-swatches-admin.php:742
+msgid "Meta key read for the capacity of a product when its \"Saito Swatches\" tab has none (e.g. the name of an ACF field). Empty to disable."
+msgstr "Clé méta lue pour la contenance d’un produit quand son onglet « Saito Swatches » n’en indique pas (par exemple le nom d’un champ ACF). Vide pour désactiver."
+
+#: includes/class-saito-swatches-admin.php:745
+msgid "Saito Navi"
+msgstr "Saito Navi"
+
+#: includes/class-saito-swatches-admin.php:746
+msgid "Share images with Saito Navi"
+msgstr "Partager les images avec Saito Navi"
+
+#: includes/class-saito-swatches-admin.php:746
+msgid "Shows the images and colors of your values in the swatches of the Saito Navi sticky add-to-cart."
+msgstr "Affiche les images et couleurs de vos valeurs dans les pastilles du panier sticky de Saito Navi."
+
+#: includes/class-saito-swatches-admin.php:749
+msgid "Data"
+msgstr "Données"
+
+#: includes/class-saito-swatches-admin.php:750
+msgid "Keep settings when deleting the plugin"
+msgstr "Conserver les réglages à la suppression de l’extension"
+
+#: includes/class-saito-swatches-admin.php:753
+msgid "For developers"
+msgstr "Pour les développeurs"
+
+#: includes/class-saito-swatches-admin.php:756
+msgid "filter the settings at runtime."
+msgstr "filtrer les réglages à l’exécution."
+
+#: includes/class-saito-swatches-admin.php:757
+msgid "load the scripts on more pages."
+msgstr "charger les scripts sur d’autres pages."
+
+#: includes/class-saito-swatches-admin.php:758
+msgid "change the admin menu this page belongs to."
+msgstr "changer le menu d’administration de cette page."
+
+#: includes/class-saito-swatches-admin.php:759
+msgid "change the images sent to Saito Navi."
+msgstr "modifier les images envoyées à Saito Navi."
+
+#: includes/class-saito-swatches-admin.php:760
+msgid "get the image of a value from another plugin."
+msgstr "récupérer l’image d’une valeur depuis une autre extension."
+
+#: includes/class-saito-swatches-admin.php:771
+msgid "Live preview"
+msgstr "Aperçu en direct"
+
+#: includes/class-saito-swatches-admin.php:772
+msgid "Preview device"
+msgstr "Appareil de l’aperçu"
+
+#: includes/class-saito-swatches-admin.php:773
+msgid "Desktop"
+msgstr "Ordinateur"
+
+#: includes/class-saito-swatches-admin.php:780
+msgid "Approximate rendering: fonts and some styles come from your theme."
+msgstr "Rendu approximatif : les polices et certains styles viennent de votre thème."
+
+#: includes/class-saito-swatches-admin.php:787
+msgid "Save changes"
+msgstr "Enregistrer les modifications"
+
+#: includes/class-saito-swatches-product.php:95
+msgid "Circle"
+msgstr "Rond"
+
+#: includes/class-saito-swatches-product.php:96
+msgid "Rounded square"
+msgstr "Carré arrondi"
+
+#: includes/class-saito-swatches-product.php:97
+msgid "Square"
+msgstr "Carré"
+
+#. translators: %s: product name.
+#: includes/class-saito-swatches-product.php:427
+#, php-format
+msgid "Replace the swatch settings of this product with those of \"%s\"? Nothing is saved until you update the product."
+msgstr "Remplacer les réglages des vignettes de ce produit par ceux de « %s » ? Rien n’est enregistré tant que vous ne mettez pas le produit à jour."
+
+#. translators: %d: number of values.
+#: includes/class-saito-swatches-product.php:429
+#, php-format
+msgid "Settings copied (%d values). Update the product to save them."
+msgstr "Réglages copiés (%d valeurs). Mettez à jour le produit pour les enregistrer."
+
+#: includes/class-saito-swatches-product.php:430
+msgid "Settings copied. This product has no value in common with the other one: only the general settings were copied."
+msgstr "Réglages copiés. Ce produit n’a aucune valeur en commun avec l’autre : seuls les réglages généraux ont été copiés."
+
+#: includes/class-saito-swatches-product.php:431
+msgid "The settings could not be loaded. Reload the page and try again."
+msgstr "Impossible de charger les réglages. Rechargez la page et réessayez."
+
+#: includes/class-saito-swatches-product.php:452
+msgid "Global value (Saito → Swatches → Attributes)"
+msgstr "Valeur globale (Saito → Swatches → Attributs)"
+
+#: includes/class-saito-swatches-product.php:452
+msgid "Global"
+msgstr "Global"
+
+#: includes/class-saito-swatches-product.php:464 includes/class-saito-swatches-product.php:465
+msgid "Default"
+msgstr "Par défaut"
+
+#: includes/class-saito-swatches-product.php:471
+msgid "Capacity (unit price)"
+msgstr "Contenance (prix unitaire)"
+
+#: includes/class-saito-swatches-product.php:472
+msgid "e.g. 30"
+msgstr "ex. 30"
+
+#. translators: 1: value, 2: meta key.
+#: includes/class-saito-swatches-product.php:477
+#, php-format
+msgid "Empty: %1$s, read from the \"%2$s\" field."
+msgstr "Vide : %1$s, lu depuis le champ « %2$s »."
+
+#: includes/class-saito-swatches-product.php:479
+msgid "Used for the unit price of simple products, in the unit of the unit price text."
+msgstr "Sert au prix unitaire des produits simples, dans l’unité du texte du prix unitaire."
+
+#: includes/class-saito-swatches-product.php:485
+msgid "Price in the swatches"
+msgstr "Prix dans les vignettes"
+
+#. translators: %s: Yes or No.
+#. translators: %s: swatch type.
+#: includes/class-saito-swatches-product.php:488 includes/class-saito-swatches-product.php:547
+#, php-format
+msgid "Default (%s)"
+msgstr "Par défaut (%s)"
+
+#. translators: %s: Yes or No.
+#: includes/class-saito-swatches-product.php:488 includes/class-saito-swatches-product.php:489
+msgid "Yes"
+msgstr "Oui"
+
+#. translators: %s: Yes or No.
+#: includes/class-saito-swatches-product.php:488 includes/class-saito-swatches-product.php:490
+msgid "No"
+msgstr "Non"
+
+#: includes/class-saito-swatches-product.php:505
+msgid "Add attributes \"Used for variations\" in the Attributes tab, save the product, and their swatches appear here."
+msgstr "Ajoutez des attributs « Utilisé pour les variations » dans l’onglet Attributs, enregistrez le produit, et leurs vignettes apparaissent ici."
+
+#: includes/class-saito-swatches-product.php:540
+msgid "Global attribute"
+msgstr "Attribut global"
+
+#: includes/class-saito-swatches-product.php:540
+msgid "Custom attribute"
+msgstr "Attribut personnalisé"
+
+#: includes/class-saito-swatches-product.php:543
+msgid "Type"
+msgstr "Type"
+
+#: includes/class-saito-swatches-product.php:551
+msgid "Shape"
+msgstr "Forme"
+
+#: includes/class-saito-swatches-product.php:558
+msgid "Size"
+msgstr "Taille"
+
+#: includes/class-saito-swatches-product.php:559
+msgid "Empty: size set in Saito → Swatches → Appearance."
+msgstr "Vide : taille définie dans Saito → Swatches → Apparence."
+
+#: includes/class-saito-swatches-product.php:628
+msgid "Empty fields use the global values of the attribute (Saito → Swatches → Attributes). Fill them only to change this product."
+msgstr "Les champs vides reprennent les valeurs globales de l’attribut (Saito → Swatches → Attributs). Remplissez-les seulement pour modifier ce produit."
+
+#: includes/class-saito-swatches-product.php:629
+msgid "This attribute only exists on this product: its swatches are set here."
+msgstr "Cet attribut n’existe que sur ce produit : ses vignettes se règlent ici."
+
+#: includes/class-saito-swatches-product.php:669
+msgid "Copy the settings of another product"
+msgstr "Copier les réglages d’un autre produit"
+
+#: includes/class-saito-swatches-product.php:673
+msgid "Choose a product…"
+msgstr "Choisir un produit…"
+
+#: includes/class-saito-swatches-product.php:678
+msgid "Copy"
+msgstr "Copier"
+
+#: includes/class-saito-swatches-product.php:680
+msgid "Copies the type, shape, size, price display and the image, color, icon and texts of the values both products share. The capacity is not copied."
+msgstr "Copie le type, la forme, la taille, l’affichage du prix, ainsi que l’image, la couleur, l’icône et les textes des valeurs communes aux deux produits. La contenance n’est pas copiée."
+
+#: includes/class-saito-swatches-product.php:683
+msgid "No other product has swatch settings yet. Once you have set up one product, you can copy its settings here."
+msgstr "Aucun autre produit n’a encore de réglages de vignettes. Dès qu’un produit est configuré, vous pourrez copier ses réglages ici."
+
+#: includes/class-saito-swatches-terms.php:62
+msgid "Automatic"
+msgstr "Automatique"
+
+#: includes/class-saito-swatches-terms.php:64
+msgid "Variation image"
+msgstr "Image de la variation"
+
+#: includes/class-saito-swatches-terms.php:66
+msgid "Button with text"
+msgstr "Bouton texte"
+
+#: includes/class-saito-swatches-terms.php:68
+msgid "Dropdown (no swatches)"
+msgstr "Liste déroulante (sans vignettes)"
+
+#: includes/class-saito-swatches-terms.php:355
+msgid "Remove image"
+msgstr "Retirer l’image"
+
+#: includes/class-saito-swatches-terms.php:392
+msgid "Label shown on the swatch"
+msgstr "Libellé affiché sur la vignette"
+
+#: includes/class-saito-swatches-terms.php:393
+msgid "Swatch subtitle"
+msgstr "Sous-titre de la vignette"
+
+#: includes/class-saito-swatches-terms.php:393
+msgid "Global subtitle"
+msgstr "Sous-titre global"
+
+#: includes/class-saito-swatches-terms.php:394
+msgid "Quantity for the unit price"
+msgstr "Quantité pour le prix unitaire"
+
+#: includes/class-saito-swatches-terms.php:394
+msgid "Auto"
+msgstr "Auto"
+
+#: includes/class-saito-swatches-terms.php:404
+msgid "Which one is shown depends on the swatch type of the attribute (Saito → Swatches → Attributes). In automatic mode: image, then color, then icon."
+msgstr "Le visuel affiché dépend du type de vignette de l’attribut (Saito → Vignettes → Attributs). En mode automatique : l’image, sinon la couleur, sinon l’icône."
+
+#: includes/class-saito-swatches-terms.php:415 includes/class-saito-swatches-terms.php:445
+msgid "Swatch image"
+msgstr "Image de la vignette"
+
+#: includes/class-saito-swatches-terms.php:572 includes/class-saito-swatches-terms.php:589
+msgid "Swatch type (Saito Swatches)"
+msgstr "Type de vignette (Saito Swatches)"
+
+#: includes/class-saito-swatches-terms.php:574 includes/class-saito-swatches-terms.php:592
+msgid "Set the image, color or icon of each value in \"Configure terms\"."
+msgstr "Définissez l’image, la couleur ou l’icône de chaque valeur dans « Configurer les termes »."
+
+#: saito-swatches.php:113
+msgid "Saito Swatches requires WooCommerce to be installed and active."
+msgstr "Saito Swatches nécessite que WooCommerce soit installé et activé."
+
