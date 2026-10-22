@@ -115,8 +115,9 @@ for required in (
     assert required in names, f"Fichier manquant dans le zip : {required} (.distignore trop large ?)"
 
 data = zf.read('saito-swatches/saito-swatches.php').decode('utf-8')
-assert f"Version: {version}" in data, "Version incohérente entre saito-swatches.php et le nom du zip"
-assert "Text Domain: saito-swatches" in data, "Text Domain incorrect dans le zip"
+import re
+assert re.search(r"Version:\s*" + re.escape(version) + r"\s", data), "Version incohérente entre saito-swatches.php et le nom du zip"
+assert re.search(r"Text Domain:\s*saito-swatches\s", data), "Text Domain incorrect dans le zip"
 
 print(f"OK : {len(names)} fichiers, dossier racine 'saito-swatches/', Text Domain aligné, version {version}.")
 PYEOF
