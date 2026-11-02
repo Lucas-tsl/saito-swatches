@@ -21,6 +21,13 @@
 		transition: opacity 0.35s ease;
 	}
 
+	/* Block grids: same box and cropping as the product image (themes often crop it
+	   to a square with object-fit: cover), whatever the ratio of the second image. */
+	.wc-block-components-product-image .saito-swatches-hover-img {
+		height: 100%;
+		object-fit: cover;
+	}
+
 	li.product:hover .saito-swatches-hover-img,
 	.wc-block-components-product-image:hover .saito-swatches-hover-img {
 		opacity: 1;

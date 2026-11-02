@@ -182,7 +182,10 @@ final class Saito_Swatches_Shop {
 	 */
 	public static function classic_hover_image() {
 		global $product;
-		if ( ! self::hover_enabled() || ! $product instanceof WC_Product ) {
+		// Block themes: the image is added by the Product Image block (block_hover_image()).
+		// WooCommerce also fires this classic hook in block product grids for older
+		// plugins, which printed a second, oversized image outside the product image.
+		if ( ! self::hover_enabled() || ! $product instanceof WC_Product || wp_is_block_theme() ) {
 			return;
 		}
 		echo self::hover_image_html( $product, 'woocommerce_thumbnail' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- wp_get_attachment_image() output.
