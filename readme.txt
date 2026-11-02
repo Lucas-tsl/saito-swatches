@@ -106,6 +106,7 @@ Yes. The plugin is fully translatable and ships with a French translation.
 == Changelog ==
 
 = 1.5.0 =
+* The shared "Saito" menu no longer has a Tools page (custom CSS and JavaScript): WordPress.org no longer allows plugins to store arbitrary code. Custom CSS saved there is moved to the WordPress Additional CSS; saved JavaScript is shown once in an admin notice so it can be copied elsewhere.
 * New: price in the add-to-cart button ("Add to cart – 34,50 €"), the price of the selected variation for variable products, with an editable text. Works with or without swatches.
 * New: `[saito_swatches_price]` shortcode, the product price replaced by the price of the selected variation (also answers to the former `[saito_prix_dynamique]`).
 * New: second image of the gallery on hover in product lists (classic and block grids, large screens only).
