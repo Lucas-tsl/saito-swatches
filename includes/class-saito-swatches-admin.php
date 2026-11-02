@@ -141,6 +141,7 @@ final class Saito_Swatches_Admin {
 					'unsaved'     => __( 'Unsaved changes', 'saito-swatches' ),
 					'sampleLabel' => __( 'Sample', 'saito-swatches' ),
 					'outOfStock'  => __( 'Out of stock', 'saito-swatches' ),
+					'addToCart'   => __( 'Add to cart', 'saito-swatches' ),
 				),
 			)
 		);

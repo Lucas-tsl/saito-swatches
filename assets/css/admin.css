@@ -729,3 +729,25 @@
 	display: block;
 	color: var(--saito-muted);
 }
+
+/* Live preview: mock price and add-to-cart button around the swatches
+   (unit price position, price in the button). */
+.saito-preview__price {
+	margin: 1em 0 0.5em;
+	font-weight: 600;
+}
+
+.saito-unit-price--inline {
+	display: inline;
+	margin-left: 0.5em;
+	font-weight: 400;
+}
+
+.saito-preview__button {
+	display: inline-block;
+	padding: 0.6em 1.2em;
+	border-radius: 2px;
+	background: #1d2327;
+	color: #fff;
+	font-size: 13px;
+}

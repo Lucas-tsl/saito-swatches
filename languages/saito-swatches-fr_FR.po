@@ -1156,3 +1156,6 @@ msgstr ""
 #: includes/saito-hub/hub.php:395
 msgid "Page du plugin"
 msgstr ""
+
+msgid "Add to cart"
+msgstr "Ajouter au panier"

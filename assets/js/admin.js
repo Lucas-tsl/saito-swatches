@@ -329,9 +329,33 @@
 
 			var $canvas = $preview.find('.saito-preview__canvas').empty().append($group);
 
-			if (setting('price_per_unit')) {
-				var text = String(setting('unit_template') || '{price}').replace('{price}', formatPrice(24.9));
-				$('<span class="saito-unit-price"></span>').text(text).appendTo($canvas);
+			// Mock of the product page around the swatches: variation price and
+			// add-to-cart button, so that the unit price position and the price in
+			// the button can be previewed. Sample: 30 ml at 34,50 €.
+			var samplePrice = 34.5;
+			var reference = parseFloat(setting('unit_reference')) || 100;
+			var unitText = String(setting('unit_template') || '{price}').replace('{price}', formatPrice(samplePrice / 30 * reference));
+			var showUnit = setting('price_per_unit');
+			var position = setting('unit_position') || 'after_cart';
+
+			var $price = $('<p class="saito-preview__price"></p>').text(formatPrice(samplePrice));
+			if (showUnit && 'in_price' === position) {
+				$('<span class="saito-unit-price saito-unit-price--inline"></span>').text(unitText).appendTo($price);
+			}
+			$canvas.append($price);
+
+			var buttonText = i18n.addToCart || 'Add to cart';
+			if (setting('button_price')) {
+				var template = String(setting('button_template') || '{text} – {price}');
+				if (template.indexOf('{price}') === -1) {
+					template += ' {price}';
+				}
+				buttonText = $.trim(template.replace('{text}', buttonText).replace('{price}', formatPrice(samplePrice)));
+			}
+			$('<span class="saito-preview__button"></span>').text(buttonText).appendTo($canvas);
+
+			if (showUnit && 'after_cart' === position) {
+				$('<span class="saito-unit-price"></span>').text(unitText).appendTo($canvas);
 			}
 		}
 
