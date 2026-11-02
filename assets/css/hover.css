@@ -1,0 +1,54 @@
+/**
+ * Saito Swatches — second product image on hover in product lists
+ * (classic lists and block product grids). Large screens with a mouse only.
+ */
+@media (hover: hover) and (min-width: 1025px) {
+	.woocommerce-LoopProduct-link,
+	.wc-block-components-product-image a,
+	.wc-block-components-product-image {
+		position: relative;
+	}
+
+	.saito-swatches-hover-img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+		margin: 0;
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity 0.35s ease;
+	}
+
+	/* Block grids: same box and cropping as the product image (themes often crop it
+	   to a square with object-fit: cover), whatever the ratio of the second image. */
+	.wc-block-components-product-image .saito-swatches-hover-img {
+		height: 100%;
+		object-fit: cover;
+	}
+
+	li.product:hover .saito-swatches-hover-img,
+	.wc-block-components-product-image:hover .saito-swatches-hover-img {
+		opacity: 1;
+	}
+
+	/* A shop swatch is hovered: its variation image wins (assets/js/loop.js). */
+	li.product:has(.saito-loop-swatch:hover) .saito-swatches-hover-img,
+	.wp-block-post:has(.saito-loop-swatch:hover) .saito-swatches-hover-img {
+		opacity: 0;
+	}
+}
+
+/* Small screens and touch screens: the second image is never shown. */
+@media not all and (hover: hover), (max-width: 1024px) {
+	.saito-swatches-hover-img {
+		display: none;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.saito-swatches-hover-img {
+		transition: none;
+	}
+}

@@ -141,6 +141,7 @@ final class Saito_Swatches_Admin {
 					'unsaved'     => __( 'Unsaved changes', 'saito-swatches' ),
 					'sampleLabel' => __( 'Sample', 'saito-swatches' ),
 					'outOfStock'  => __( 'Out of stock', 'saito-swatches' ),
+					'addToCart'   => __( 'Add to cart', 'saito-swatches' ),
 				),
 			)
 		);
@@ -536,6 +537,9 @@ final class Saito_Swatches_Admin {
 
 							self::card_open( __( 'Prices and shop pages', 'saito-swatches' ) );
 							self::field( 'toggle', 'show_price', __( 'Show the price in each swatch', 'saito-swatches' ), array( 'description' => __( 'The lowest price of the variations with this value. Each product can change this in its "Saito Swatches" tab.', 'saito-swatches' ) ) );
+							self::field( 'toggle', 'button_price', __( 'Show the price in the add-to-cart button', 'saito-swatches' ), array( 'description' => __( 'On product pages, e.g. "Add to cart – 34,50 €". For variable products, the price of the selected variation. Works with or without swatches.', 'saito-swatches' ) ) );
+							self::field( 'text', 'button_template', __( 'Add-to-cart button text', 'saito-swatches' ), array( 'placeholder' => '{text} – {price}', 'description' => __( '<code>{text}</code> is the usual button text, <code>{price}</code> the price. Anywhere on a product page, the <code>[saito_swatches_price]</code> shortcode also shows the price of the selected variation.', 'saito-swatches' ) ) );
+							self::field( 'toggle', 'hover_image', __( 'Show the second image on hover in product lists', 'saito-swatches' ), array( 'description' => __( 'On shop, category and block product grids, hovering a product shows the first image of its gallery. Large screens with a mouse only.', 'saito-swatches' ) ) );
 							self::field( 'toggle', 'loop_swatches', __( 'Show swatches on shop and category pages', 'saito-swatches' ), array( 'description' => __( 'Small swatches under the product price. Hovering one shows the variation image; clicking opens the product with this value selected.', 'saito-swatches' ) ) );
 							self::field( 'number', 'loop_limit', __( 'Swatches shown per product', 'saito-swatches' ), array( 'min' => 1, 'max' => 30, 'description' => __( 'The others are summed up as "+3".', 'saito-swatches' ) ) );
 							self::field( 'number', 'loop_size', __( 'Size of shop page swatches', 'saito-swatches' ), array( 'min' => 12, 'max' => 80, 'unit' => 'px' ) );

@@ -3,7 +3,7 @@
  * Plugin Name:          Saito Swatches
  * Plugin URI:           https://wordpress.org/plugins/saito-swatches/
  * Description:          Replace WooCommerce variation dropdowns with image swatches and show a unit price (e.g. per 100 ml). Everything is editable from the admin, no template override needed.
- * Version:              1.4.0
+ * Version:              1.5.0
  * Requires at least:    6.0
  * Requires PHP:         7.4
  * Requires Plugins:     woocommerce
@@ -21,7 +21,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'SAITO_SWATCHES_VERSION', '1.4.0' );
+define( 'SAITO_SWATCHES_VERSION', '1.5.0' );
 define( 'SAITO_SWATCHES_FILE', __FILE__ );
 define( 'SAITO_SWATCHES_DIR', plugin_dir_path( __FILE__ ) );
 define( 'SAITO_SWATCHES_URL', plugin_dir_url( __FILE__ ) );
@@ -49,6 +49,7 @@ require_once SAITO_SWATCHES_DIR . 'includes/class-saito-swatches-settings.php';
 require_once SAITO_SWATCHES_DIR . 'includes/class-saito-swatches-terms.php';
 require_once SAITO_SWATCHES_DIR . 'includes/class-saito-swatches-product.php';
 require_once SAITO_SWATCHES_DIR . 'includes/class-saito-swatches-frontend.php';
+require_once SAITO_SWATCHES_DIR . 'includes/class-saito-swatches-shop.php';
 require_once SAITO_SWATCHES_DIR . 'includes/class-saito-swatches-admin.php';
 
 /**
@@ -88,6 +89,7 @@ add_action(
 		Saito_Swatches_Terms::init();
 		Saito_Swatches_Product::init();
 		Saito_Swatches_Frontend::init();
+		Saito_Swatches_Shop::init();
 
 		if ( is_admin() ) {
 			Saito_Swatches_Admin::init();

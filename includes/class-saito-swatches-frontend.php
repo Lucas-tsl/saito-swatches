@@ -43,7 +43,8 @@ final class Saito_Swatches_Frontend {
 	 */
 	private static function should_load() {
 		$settings = Saito_Swatches_Settings::get();
-		if ( empty( $settings['enabled'] ) ) {
+		// The price in the add-to-cart button works even with the swatches turned off.
+		if ( empty( $settings['enabled'] ) && empty( $settings['button_price'] ) ) {
 			return false;
 		}
 		$load = ! empty( $settings['load_everywhere'] ) || ( function_exists( 'is_product' ) && is_product() );
@@ -154,6 +155,8 @@ final class Saito_Swatches_Frontend {
 			'unitReference'   => (float) $settings['unit_reference'],
 			'unitTemplate'    => $settings['unit_template'],
 			'unitPosition'    => $settings['unit_position'],
+			'buttonPrice'     => ! empty( $settings['button_price'] ),
+			'buttonTemplate'  => '' !== trim( (string) $settings['button_template'] ) ? $settings['button_template'] : '{text} – {price}',
 			'hideSelectors'   => $settings['hide_selectors'],
 			'unavailableText' => $settings['unavailable_text'],
 			'currency'        => array(

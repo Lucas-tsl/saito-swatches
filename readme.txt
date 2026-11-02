@@ -4,7 +4,7 @@ Tags: woocommerce, variation swatches, swatches, product variations, unit price
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.4.0
+Stable tag: 1.5.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,6 +31,8 @@ Set your swatches once for the whole shop in **Saito → Swatches → Attributes
 * **Appearance**: layout (row, grid, stacked), image beside or above the text, shape (circle, rounded, square), spacing, border, corner radius, colors, dot and icon size, opacity of non-selected swatches, dedicated mobile layout and breakpoint.
 * **Unavailable combinations** faded, struck through or hidden, using WooCommerce's own availability data.
 * **Out of stock badge** on values whose variations are all out of stock: your own text ("Sold out", "Back soon"…), color and position. The value stays clickable.
+* **Price in the add-to-cart button** (optional): "Add to cart – 34,50 €", the price of the selected variation for variable products, with your own wording. Also the `[saito_swatches_price]` shortcode, which shows the price of the selected variation anywhere on the product page.
+* **Second image on hover** (optional) in product lists: hovering a product shows the first image of its gallery, in classic lists and block product grids, on large screens.
 * **Copy the settings of another product** in one click from the product tab, then adjust what differs.
 * **Accessible**: real buttons, radio-group semantics, arrow-key navigation, visible focus.
 * **Lightweight**: assets load on product pages only (plus a tiny script on shop pages when shop swatches are on); no external requests, no tracking.
@@ -103,6 +105,14 @@ Yes. The plugin is fully translatable and ships with a French translation.
 
 == Changelog ==
 
+= 1.5.0 =
+* The shared "Saito" menu no longer has a Tools page (custom CSS and JavaScript): WordPress.org no longer allows plugins to store arbitrary code. Custom CSS saved there is moved to the WordPress Additional CSS; saved JavaScript is shown once in an admin notice so it can be copied elsewhere.
+* New: price in the add-to-cart button ("Add to cart – 34,50 €"), the price of the selected variation for variable products, with an editable text. Works with or without swatches.
+* New: `[saito_swatches_price]` shortcode, the product price replaced by the price of the selected variation (also answers to the former `[saito_prix_dynamique]`).
+* New: second image of the gallery on hover in product lists (classic and block grids, large screens only).
+* The settings now live in the shared "Saito" menu of the Saito plugins.
+* Coming from Saito Dev Toolkit: its "price in the button" and "hover image" settings are imported once.
+
 = 1.4.0 =
 * Shop page swatches now also appear in product grids built with blocks (Product Collection, block themes), after the price, the name or the image.
 * Clearer hierarchy inside swatches: value name, lighter subtitle, price set apart.
@@ -135,6 +145,9 @@ Yes. The plugin is fully translatable and ships with a French translation.
 * First public release.
 
 == Upgrade Notice ==
+
+= 1.5.0 =
+Price in the add-to-cart button, dynamic price shortcode and hover image in product lists. Settings move to the shared Saito menu.
 
 = 1.4.0 =
 Shop swatches in block product grids, typography settings.

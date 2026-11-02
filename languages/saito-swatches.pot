@@ -2,32 +2,43 @@
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Saito Swatches 1.2.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/saito-swatches\n"
+"Project-Id-Version: Saito Swatches 1.4.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/swi-1792683426\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-21 08:00+0000\n"
+"POT-Creation-Date: 2026-10-22T15:37:06+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: saito-swatches\n"
 
 #. Plugin Name of the plugin
-#: includes/class-saito-swatches-admin.php:118 includes/class-saito-swatches-admin.php:498 includes/class-saito-swatches-product.php:396
+#: saito-swatches.php
+#: includes/class-saito-swatches-admin.php:91
+#: includes/class-saito-swatches-admin.php:463
+#: includes/class-saito-swatches-product.php:396
 msgid "Saito Swatches"
 msgstr ""
 
 #. Plugin URI of the plugin
+#: saito-swatches.php
 msgid "https://wordpress.org/plugins/saito-swatches/"
 msgstr ""
 
 #. Description of the plugin
+#: saito-swatches.php
 msgid "Replace WooCommerce variation dropdowns with image swatches and show a unit price (e.g. per 100 ml). Everything is editable from the admin, no template override needed."
 msgstr ""
 
 #. Author of the plugin
+#: saito-swatches.php
 msgid "Troteseil Lucas"
 msgstr ""
 
 #. Author URI of the plugin
+#: saito-swatches.php
 msgid "https://profiles.wordpress.org/lucastsl/"
 msgstr ""
 
@@ -35,741 +46,802 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:119
+#: includes/class-saito-swatches-admin.php:91
 msgid "Swatches"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:174 includes/class-saito-swatches-product.php:422 includes/class-saito-swatches-terms.php:333
+#: includes/class-saito-swatches-admin.php:139
+#: includes/class-saito-swatches-product.php:422
+#: includes/class-saito-swatches-terms.php:333
 msgid "Choose a swatch image"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:175 includes/class-saito-swatches-product.php:423 includes/class-saito-swatches-terms.php:334
+#: includes/class-saito-swatches-admin.php:140
+#: includes/class-saito-swatches-product.php:423
+#: includes/class-saito-swatches-terms.php:334
 msgid "Use this image"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:176
+#: includes/class-saito-swatches-admin.php:141
 msgid "Unsaved changes"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:177
+#: includes/class-saito-swatches-admin.php:142
 msgid "Sample"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:178 includes/class-saito-swatches-admin.php:729 includes/class-saito-swatches-settings.php:173
+#: includes/class-saito-swatches-admin.php:143
+#: includes/class-saito-swatches-admin.php:697
+#: includes/class-saito-swatches-settings.php:176
 msgid "Out of stock"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:191
+#: includes/class-saito-swatches-admin.php:156
 msgid "General"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:192
+#: includes/class-saito-swatches-admin.php:157
 msgid "Attributes"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:193
+#: includes/class-saito-swatches-admin.php:158
 msgid "Appearance"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:194
+#: includes/class-saito-swatches-admin.php:159
 msgid "Texts"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:195
+#: includes/class-saito-swatches-admin.php:160
 msgid "Advanced"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:335
+#: includes/class-saito-swatches-admin.php:300
 msgid "New value, e.g. 70 ml"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:335
+#: includes/class-saito-swatches-admin.php:300
 msgid "Name of the new value"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:339 includes/class-saito-swatches-product.php:596 includes/class-saito-swatches-terms.php:354
+#: includes/class-saito-swatches-admin.php:304
+#: includes/class-saito-swatches-product.php:596
+#: includes/class-saito-swatches-terms.php:354
 msgid "Choose image"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:347 includes/class-saito-swatches-product.php:604
+#: includes/class-saito-swatches-admin.php:312
+#: includes/class-saito-swatches-product.php:604
 msgid "Remove"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:350 includes/class-saito-swatches-product.php:606 includes/class-saito-swatches-terms.php:419 includes/class-saito-swatches-terms.php:449
+#: includes/class-saito-swatches-admin.php:315
+#: includes/class-saito-swatches-product.php:606
+#: includes/class-saito-swatches-terms.php:419
+#: includes/class-saito-swatches-terms.php:449
 msgid "Swatch color"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:354 includes/class-saito-swatches-product.php:609 includes/class-saito-swatches-terms.php:423 includes/class-saito-swatches-terms.php:453
+#: includes/class-saito-swatches-admin.php:319
+#: includes/class-saito-swatches-product.php:609
+#: includes/class-saito-swatches-terms.php:423
+#: includes/class-saito-swatches-terms.php:453
 msgid "Swatch icon"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:355 includes/class-saito-swatches-product.php:610 includes/class-saito-swatches-terms.php:378
+#: includes/class-saito-swatches-admin.php:320
+#: includes/class-saito-swatches-product.php:610
+#: includes/class-saito-swatches-terms.php:378
 msgid "No icon"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:362 includes/class-saito-swatches-admin.php:362 includes/class-saito-swatches-product.php:617 includes/class-saito-swatches-product.php:617
+#: includes/class-saito-swatches-admin.php:327
+#: includes/class-saito-swatches-product.php:617
 msgid "Displayed label"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:363 includes/class-saito-swatches-admin.php:363 includes/class-saito-swatches-admin.php:688 includes/class-saito-swatches-admin.php:725
+#: includes/class-saito-swatches-admin.php:328
+#: includes/class-saito-swatches-admin.php:656
+#: includes/class-saito-swatches-admin.php:693
 msgid "Subtitle"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:364 includes/class-saito-swatches-admin.php:364 includes/class-saito-swatches-product.php:618 includes/class-saito-swatches-product.php:618
+#: includes/class-saito-swatches-admin.php:329
+#: includes/class-saito-swatches-product.php:618
 msgid "Quantity (unit price)"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:368
+#: includes/class-saito-swatches-admin.php:333
 msgid "Delete this value"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:382
+#: includes/class-saito-swatches-admin.php:347
 msgid "WCBoost Variation Swatches is active. It changes the same WooCommerce dropdowns after Saito Swatches, so its swatches can replace these ones. Deactivate it to let Saito Swatches handle every attribute."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:386
+#: includes/class-saito-swatches-admin.php:351
 msgid "Swatches by attribute"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:387
+#: includes/class-saito-swatches-admin.php:352
 msgid "No global attribute yet. Create one in Products → Attributes, then come back here."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:388
+#: includes/class-saito-swatches-admin.php:353
 msgid "Open Products → Attributes"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:393
+#: includes/class-saito-swatches-admin.php:358
 msgid "Everything about your swatches is here: how each attribute is displayed, the image, color or icon of each value, its optional texts, and new values. These are the same data as in Products → Attributes → Configure terms. Values are shown in the order set in WooCommerce."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:417
+#: includes/class-saito-swatches-admin.php:382
 msgid "Configure terms in WooCommerce"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:421
+#: includes/class-saito-swatches-admin.php:386
 msgid "Swatch type"
 msgstr ""
 
 #. translators: %s: WooCommerce attribute type, e.g. "color".
-#: includes/class-saito-swatches-admin.php:434
+#: includes/class-saito-swatches-admin.php:399
 #, php-format
 msgid "WooCommerce type of this attribute: \"%s\" (set by another swatches plugin). Set it back to \"Select\" in Products → Attributes if that plugin is no longer used."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:441 includes/class-saito-swatches-product.php:567
+#: includes/class-saito-swatches-admin.php:406
+#: includes/class-saito-swatches-product.php:567
 msgid "Value"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:442 includes/class-saito-swatches-product.php:568 includes/class-saito-swatches-terms.php:63
+#: includes/class-saito-swatches-admin.php:407
+#: includes/class-saito-swatches-product.php:568
+#: includes/class-saito-swatches-terms.php:63
 msgid "Image"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:443 includes/class-saito-swatches-product.php:569 includes/class-saito-swatches-terms.php:65
+#: includes/class-saito-swatches-admin.php:408
+#: includes/class-saito-swatches-product.php:569
+#: includes/class-saito-swatches-terms.php:65
 msgid "Color"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:444 includes/class-saito-swatches-product.php:570 includes/class-saito-swatches-terms.php:67
+#: includes/class-saito-swatches-admin.php:409
+#: includes/class-saito-swatches-product.php:570
+#: includes/class-saito-swatches-terms.php:67
 msgid "Icon"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:445 includes/class-saito-swatches-product.php:571
+#: includes/class-saito-swatches-admin.php:410
+#: includes/class-saito-swatches-product.php:571
 msgid "Texts (optional)"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:446
+#: includes/class-saito-swatches-admin.php:411
 msgid "Actions"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:458
+#: includes/class-saito-swatches-admin.php:423
 msgid "Add a value to this attribute"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:499
+#: includes/class-saito-swatches-admin.php:464
 msgid "Image swatches and unit price for WooCommerce variations."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:503
+#: includes/class-saito-swatches-admin.php:468
+#: includes/saito-hub/hub.php:141
+#: includes/saito-hub/hub.php:377
+#: includes/saito-hub/hub.php:383
 msgid "Documentation"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:504
+#: includes/class-saito-swatches-admin.php:469
 msgid "Support"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:511
+#: includes/class-saito-swatches-admin.php:476
 msgid "Settings sections"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:531
+#: includes/class-saito-swatches-admin.php:496
 msgid "First steps"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:532
+#: includes/class-saito-swatches-admin.php:497
 msgid "Three steps and your variation dropdowns become image swatches."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:535
+#: includes/class-saito-swatches-admin.php:500
 msgid "Choose a swatch type"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:535
+#: includes/class-saito-swatches-admin.php:500
 msgid "In the Attributes tab, pick image, color, button or icon for each attribute."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:536
+#: includes/class-saito-swatches-admin.php:501
 msgid "Give each value its visual"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:536
+#: includes/class-saito-swatches-admin.php:501
 msgid "Still in the Attributes tab: an image from your media library, a color or an icon. You can add new values there too."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:537
+#: includes/class-saito-swatches-admin.php:502
 msgid "Save and open a variable product"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:537
+#: includes/class-saito-swatches-admin.php:502
 msgid "Attributes with at least one configured value show swatches; the others keep their dropdown."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:539
+#: includes/class-saito-swatches-admin.php:504
 msgid "Open the Attributes tab"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:544
+#: includes/class-saito-swatches-admin.php:509
 msgid "Activation"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:545
+#: includes/class-saito-swatches-admin.php:510
 msgid "Enable swatches"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:545
+#: includes/class-saito-swatches-admin.php:510
 msgid "Turn off to get the standard WooCommerce dropdowns back without losing your settings."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:548
+#: includes/class-saito-swatches-admin.php:513
 msgid "Variation form"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:548
+#: includes/class-saito-swatches-admin.php:513
 msgid "How the WooCommerce form around the swatches behaves."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:549
+#: includes/class-saito-swatches-admin.php:514
 msgid "Hide the attribute name"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:549
+#: includes/class-saito-swatches-admin.php:514
 msgid "The label shown before the swatches (e.g. \"Size\")."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:550
+#: includes/class-saito-swatches-admin.php:515
 msgid "Hide the \"Clear\" link"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:551
+#: includes/class-saito-swatches-admin.php:516
 msgid "Reserved height under the swatches"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:551
+#: includes/class-saito-swatches-admin.php:516
 msgid "Space kept for the price and the add-to-cart button, which WooCommerce loads after the choice. Prevents layout shifts (CLS). 0 to disable."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:554
+#: includes/class-saito-swatches-admin.php:519
 msgid "Unit price"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:554
+#: includes/class-saito-swatches-admin.php:519
 msgid "Shows a price per reference quantity under the selected variation (e.g. per 100 ml). The text is editable in the Texts tab."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:555
+#: includes/class-saito-swatches-admin.php:520
 msgid "Show the unit price"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:556
+#: includes/class-saito-swatches-admin.php:521
 msgid "Reference quantity"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:556
+#: includes/class-saito-swatches-admin.php:521
 msgid "100 gives a price per 100 ml if your values are in ml. The quantity of each value is read from its \"Quantity\" field, or from the first number in its name."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:560
+#: includes/class-saito-swatches-admin.php:525
 msgid "Position"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:563
+#: includes/class-saito-swatches-admin.php:528
 msgid "Under the add-to-cart button"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:564
+#: includes/class-saito-swatches-admin.php:529
 msgid "Next to the variation price"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:568
+#: includes/class-saito-swatches-admin.php:533
 msgid "Also on simple products"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:568
+#: includes/class-saito-swatches-admin.php:533
 msgid "Uses the capacity set in the \"Saito Swatches\" tab of each product, or the field set in the Advanced tab (e.g. an ACF field)."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:569
+#: includes/class-saito-swatches-admin.php:534
 msgid "Also on shop and category pages"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:569
+#: includes/class-saito-swatches-admin.php:534
 msgid "For simple products, next to their price in product lists."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:572
+#: includes/class-saito-swatches-admin.php:537
 msgid "Prices and shop pages"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:573
+#: includes/class-saito-swatches-admin.php:538
 msgid "Show the price in each swatch"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:573
+#: includes/class-saito-swatches-admin.php:538
 msgid "The lowest price of the variations with this value. Each product can change this in its \"Saito Swatches\" tab."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:574
+#: includes/class-saito-swatches-admin.php:539
+msgid "Show the price in the add-to-cart button"
+msgstr ""
+
+#: includes/class-saito-swatches-admin.php:539
+msgid "On product pages, e.g. \"Add to cart – 34,50 €\". For variable products, the price of the selected variation. Works with or without swatches."
+msgstr ""
+
+#: includes/class-saito-swatches-admin.php:540
+msgid "Add-to-cart button text"
+msgstr ""
+
+#: includes/class-saito-swatches-admin.php:540
+msgid "<code>{text}</code> is the usual button text, <code>{price}</code> the price. Anywhere on a product page, the <code>[saito_swatches_price]</code> shortcode also shows the price of the selected variation."
+msgstr ""
+
+#: includes/class-saito-swatches-admin.php:541
+msgid "Show the second image on hover in product lists"
+msgstr ""
+
+#: includes/class-saito-swatches-admin.php:541
+msgid "On shop, category and block product grids, hovering a product shows the first image of its gallery. Large screens with a mouse only."
+msgstr ""
+
+#: includes/class-saito-swatches-admin.php:542
 msgid "Show swatches on shop and category pages"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:574
+#: includes/class-saito-swatches-admin.php:542
 msgid "Small swatches under the product price. Hovering one shows the variation image; clicking opens the product with this value selected."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:575
+#: includes/class-saito-swatches-admin.php:543
 msgid "Swatches shown per product"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:575
+#: includes/class-saito-swatches-admin.php:543
 msgid "The others are summed up as \"+3\"."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:576
+#: includes/class-saito-swatches-admin.php:544
 msgid "Size of shop page swatches"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:580
+#: includes/class-saito-swatches-admin.php:548
 msgid "Position in block product grids"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:583
+#: includes/class-saito-swatches-admin.php:551
 msgid "After the price"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:584
+#: includes/class-saito-swatches-admin.php:552
 msgid "After the product name"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:585
+#: includes/class-saito-swatches-admin.php:553
 msgid "After the image"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:587
+#: includes/class-saito-swatches-admin.php:555
 msgid "For shop and category pages built with WooCommerce blocks (Product Collection). Classic themes show the swatches under the price."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:602
+#: includes/class-saito-swatches-admin.php:570
 msgid "Layout"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:606
+#: includes/class-saito-swatches-admin.php:574
 msgid "Swatches layout"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:609 includes/class-saito-swatches-admin.php:711
+#: includes/class-saito-swatches-admin.php:577
+#: includes/class-saito-swatches-admin.php:679
 msgid "In a row"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:610
+#: includes/class-saito-swatches-admin.php:578
 msgid "Grid"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:611
+#: includes/class-saito-swatches-admin.php:579
 msgid "Stacked"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:618
+#: includes/class-saito-swatches-admin.php:586
 msgid "Image and text"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:621
+#: includes/class-saito-swatches-admin.php:589
 msgid "Image above the text"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:622
+#: includes/class-saito-swatches-admin.php:590
 msgid "Image beside the text"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:629
+#: includes/class-saito-swatches-admin.php:597
 msgid "Alignment"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:632
+#: includes/class-saito-swatches-admin.php:600
 msgid "Left"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:633
+#: includes/class-saito-swatches-admin.php:601
 msgid "Center"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:634
+#: includes/class-saito-swatches-admin.php:602
 msgid "Right"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:636
+#: includes/class-saito-swatches-admin.php:604
 msgid "Used by the \"In a row\" layout."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:639
+#: includes/class-saito-swatches-admin.php:607
 msgid "Space between swatches"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:642 includes/class-saito-swatches-terms.php:518
+#: includes/class-saito-swatches-admin.php:610
+#: includes/class-saito-swatches-terms.php:518
 msgid "Swatch"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:643
+#: includes/class-saito-swatches-admin.php:611
 msgid "Inner spacing"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:644
+#: includes/class-saito-swatches-admin.php:612
 msgid "Border width"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:645
+#: includes/class-saito-swatches-admin.php:613
 msgid "Corner radius"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:650
+#: includes/class-saito-swatches-admin.php:618
 msgid "Full size"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:651
+#: includes/class-saito-swatches-admin.php:619
 msgid "Image file size"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:651
+#: includes/class-saito-swatches-admin.php:619
 msgid "The file loaded by the browser. Pick the smallest one that stays sharp."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:652
+#: includes/class-saito-swatches-admin.php:620
 msgid "Displayed image height"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:653
+#: includes/class-saito-swatches-admin.php:621
 msgid "Color dot and icon size"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:654
+#: includes/class-saito-swatches-admin.php:622
 msgid "Shape of dots and images"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:655
+#: includes/class-saito-swatches-admin.php:623
 msgid "Opacity of non-selected swatches"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:659
+#: includes/class-saito-swatches-admin.php:627
 msgid "Unavailable combinations"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:662
+#: includes/class-saito-swatches-admin.php:630
 msgid "Faded"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:663
+#: includes/class-saito-swatches-admin.php:631
 msgid "Faded and struck through"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:664
+#: includes/class-saito-swatches-admin.php:632
 msgid "Hidden"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:670 includes/class-saito-swatches-admin.php:729
+#: includes/class-saito-swatches-admin.php:638
+#: includes/class-saito-swatches-admin.php:697
 msgid "Out of stock badge"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:670
+#: includes/class-saito-swatches-admin.php:638
 msgid "A small badge on values whose variations are all out of stock. Its text is set in the Texts tab."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:671
+#: includes/class-saito-swatches-admin.php:639
 msgid "Show the badge on out-of-stock values"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:671
+#: includes/class-saito-swatches-admin.php:639
 msgid "The value stays clickable, so customers can still see its price and stock message. Shop page swatches are faded and struck through."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:675
+#: includes/class-saito-swatches-admin.php:643
 msgid "Badge position"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:678
+#: includes/class-saito-swatches-admin.php:646
 msgid "In the top corner of the swatch"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:679
+#: includes/class-saito-swatches-admin.php:647
 msgid "Under the text"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:683
+#: includes/class-saito-swatches-admin.php:651
 msgid "Badge color"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:683
+#: includes/class-saito-swatches-admin.php:651
 msgid "Empty: dark grey. The text is white."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:686
+#: includes/class-saito-swatches-admin.php:654
 msgid "Typography"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:686
+#: includes/class-saito-swatches-admin.php:654
 msgid "Sizes of the texts inside a swatch. 0 keeps a size relative to your theme font."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:687 includes/class-saito-swatches-terms.php:392
+#: includes/class-saito-swatches-admin.php:655
+#: includes/class-saito-swatches-terms.php:392
 msgid "Value name"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:689
+#: includes/class-saito-swatches-admin.php:657
 msgid "Price"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:690
+#: includes/class-saito-swatches-admin.php:658
 msgid "Subtitle color"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:690
+#: includes/class-saito-swatches-admin.php:658
 msgid "Empty: the text color, lighter."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:691
+#: includes/class-saito-swatches-admin.php:659
 msgid "Price color"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:694
+#: includes/class-saito-swatches-admin.php:662
 msgid "Colors"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:694
+#: includes/class-saito-swatches-admin.php:662
 msgid "Leave a color empty to use the one from your theme."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:695
+#: includes/class-saito-swatches-admin.php:663
 msgid "Border"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:696
+#: includes/class-saito-swatches-admin.php:664
 msgid "Border when selected"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:697
+#: includes/class-saito-swatches-admin.php:665
 msgid "Background"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:698
+#: includes/class-saito-swatches-admin.php:666
 msgid "Background when selected"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:699
+#: includes/class-saito-swatches-admin.php:667
 msgid "Text"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:702 includes/class-saito-swatches-admin.php:774
+#: includes/class-saito-swatches-admin.php:670
+#: includes/class-saito-swatches-admin.php:742
 msgid "Mobile"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:703
+#: includes/class-saito-swatches-admin.php:671
 msgid "Mobile below"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:703
+#: includes/class-saito-swatches-admin.php:671
 msgid "Screen width under which the mobile settings apply. 0 to disable."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:707
+#: includes/class-saito-swatches-admin.php:675
 msgid "Mobile layout"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:710
+#: includes/class-saito-swatches-admin.php:678
 msgid "Stacked, full width"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:712
+#: includes/class-saito-swatches-admin.php:680
 msgid "Two columns"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:716
+#: includes/class-saito-swatches-admin.php:684
 msgid "Mobile inner spacing"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:724
+#: includes/class-saito-swatches-admin.php:692
 msgid "Texts shown to customers"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:724
+#: includes/class-saito-swatches-admin.php:692
 msgid "Every text of the swatches can be changed here. Leave a field empty to hide that text."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:725
+#: includes/class-saito-swatches-admin.php:693
 msgid "e.g. Eau de parfum"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:725
+#: includes/class-saito-swatches-admin.php:693
 msgid "Shown under each value. A value can have its own subtitle in the Attributes tab."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:726
+#: includes/class-saito-swatches-admin.php:694
 msgid "Unit price text"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:726
+#: includes/class-saito-swatches-admin.php:694
 msgid "<code>{price}</code> is replaced by the price, formatted with your WooCommerce currency settings."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:727
+#: includes/class-saito-swatches-admin.php:695
 msgid "Image alternative text"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:727
+#: includes/class-saito-swatches-admin.php:695
 msgid "Read by screen readers and search engines. <code>{label}</code> is replaced by the value name, e.g. \"Bottle {label}\"."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:728
+#: includes/class-saito-swatches-admin.php:696
 msgid "Unavailable tooltip"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:728
+#: includes/class-saito-swatches-admin.php:696
 msgid "e.g. Out of stock"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:728
+#: includes/class-saito-swatches-admin.php:696
 msgid "Shown when hovering a value that cannot be selected."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:729
+#: includes/class-saito-swatches-admin.php:697
 msgid "Shown on values whose variations are all out of stock, e.g. \"Sold out\" or \"Back soon\". Empty uses the default text. The badge can be turned off in the Appearance tab."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:730
+#: includes/class-saito-swatches-admin.php:698
 msgid "\"Clear\" link text"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:730
+#: includes/class-saito-swatches-admin.php:698
 msgid "Clear"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:730
+#: includes/class-saito-swatches-admin.php:698
 msgid "Used when the link is not hidden in the General tab. Empty keeps the WooCommerce text."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:738
+#: includes/class-saito-swatches-admin.php:706
 msgid "Theme compatibility"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:739
+#: includes/class-saito-swatches-admin.php:707
 msgid "Extra CSS classes"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:739
+#: includes/class-saito-swatches-admin.php:707
 msgid "Added to every swatch, to reuse styles from your theme (e.g. a font class)."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:740
+#: includes/class-saito-swatches-admin.php:708
 msgid "Elements to hide"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:740
+#: includes/class-saito-swatches-admin.php:708
 msgid "CSS selectors, separated by commas, hidden on product pages that show swatches (e.g. a unit price already added by your theme)."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:741
+#: includes/class-saito-swatches-admin.php:709
 msgid "Load on every page"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:741
+#: includes/class-saito-swatches-admin.php:709
 msgid "Needed only if variation forms appear outside product pages (quick view, shop page)."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:742
+#: includes/class-saito-swatches-admin.php:710
 msgid "Capacity field of products"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:742
+#: includes/class-saito-swatches-admin.php:710
 msgid "Meta key read for the capacity of a product when its \"Saito Swatches\" tab has none (e.g. the name of an ACF field). Empty to disable."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:745
+#: includes/class-saito-swatches-admin.php:713
 msgid "Saito Navi"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:746
+#: includes/class-saito-swatches-admin.php:714
 msgid "Share images with Saito Navi"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:746
+#: includes/class-saito-swatches-admin.php:714
 msgid "Shows the images and colors of your values in the swatches of the Saito Navi sticky add-to-cart."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:749
+#: includes/class-saito-swatches-admin.php:717
 msgid "Data"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:750
+#: includes/class-saito-swatches-admin.php:718
 msgid "Keep settings when deleting the plugin"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:753
+#: includes/class-saito-swatches-admin.php:721
 msgid "For developers"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:756
+#: includes/class-saito-swatches-admin.php:724
 msgid "filter the settings at runtime."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:757
+#: includes/class-saito-swatches-admin.php:725
 msgid "load the scripts on more pages."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:758
+#: includes/class-saito-swatches-admin.php:726
 msgid "change the admin menu this page belongs to."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:759
+#: includes/class-saito-swatches-admin.php:727
 msgid "change the images sent to Saito Navi."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:760
+#: includes/class-saito-swatches-admin.php:728
 msgid "get the image of a value from another plugin."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:771
+#: includes/class-saito-swatches-admin.php:739
 msgid "Live preview"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:772
+#: includes/class-saito-swatches-admin.php:740
 msgid "Preview device"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:773
+#: includes/class-saito-swatches-admin.php:741
 msgid "Desktop"
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:780
+#: includes/class-saito-swatches-admin.php:748
 msgid "Approximate rendering: fonts and some styles come from your theme."
 msgstr ""
 
-#: includes/class-saito-swatches-admin.php:787
+#: includes/class-saito-swatches-admin.php:755
 msgid "Save changes"
 msgstr ""
 
@@ -813,7 +885,8 @@ msgstr ""
 msgid "Global"
 msgstr ""
 
-#: includes/class-saito-swatches-product.php:464 includes/class-saito-swatches-product.php:465
+#: includes/class-saito-swatches-product.php:464
+#: includes/class-saito-swatches-product.php:465
 msgid "Default"
 msgstr ""
 
@@ -841,18 +914,21 @@ msgstr ""
 
 #. translators: %s: Yes or No.
 #. translators: %s: swatch type.
-#: includes/class-saito-swatches-product.php:488 includes/class-saito-swatches-product.php:547
+#: includes/class-saito-swatches-product.php:488
+#: includes/class-saito-swatches-product.php:547
 #, php-format
 msgid "Default (%s)"
 msgstr ""
 
 #. translators: %s: Yes or No.
-#: includes/class-saito-swatches-product.php:488 includes/class-saito-swatches-product.php:489
+#: includes/class-saito-swatches-product.php:488
+#: includes/class-saito-swatches-product.php:489
 msgid "Yes"
 msgstr ""
 
 #. translators: %s: Yes or No.
-#: includes/class-saito-swatches-product.php:488 includes/class-saito-swatches-product.php:490
+#: includes/class-saito-swatches-product.php:488
+#: includes/class-saito-swatches-product.php:490
 msgid "No"
 msgstr ""
 
@@ -956,19 +1032,128 @@ msgstr ""
 msgid "Which one is shown depends on the swatch type of the attribute (Saito → Swatches → Attributes). In automatic mode: image, then color, then icon."
 msgstr ""
 
-#: includes/class-saito-swatches-terms.php:415 includes/class-saito-swatches-terms.php:445
+#: includes/class-saito-swatches-terms.php:415
+#: includes/class-saito-swatches-terms.php:445
 msgid "Swatch image"
 msgstr ""
 
-#: includes/class-saito-swatches-terms.php:572 includes/class-saito-swatches-terms.php:589
+#: includes/class-saito-swatches-terms.php:572
+#: includes/class-saito-swatches-terms.php:589
 msgid "Swatch type (Saito Swatches)"
 msgstr ""
 
-#: includes/class-saito-swatches-terms.php:574 includes/class-saito-swatches-terms.php:592
+#: includes/class-saito-swatches-terms.php:574
+#: includes/class-saito-swatches-terms.php:592
 msgid "Set the image, color or icon of each value in \"Configure terms\"."
 msgstr ""
 
-#: saito-swatches.php:113
-msgid "Saito Swatches requires WooCommerce to be installed and active."
+#: includes/saito-hub/hub.php:66
+msgid "Bouton flottant : consentement cookies (Google Consent Mode V2), panier flottant, accessibilité et stories produit."
 msgstr ""
 
+#: includes/saito-hub/hub.php:74
+msgid "Questions/réponses sur les articles, pages, produits et catégories de produits, avec schéma FAQPage."
+msgstr ""
+
+#: includes/saito-hub/hub.php:82
+msgid "Calendrier de l'Avent (ou tout calendrier à cases) relié aux produits et codes promo WooCommerce."
+msgstr ""
+
+#: includes/saito-hub/hub.php:90
+msgid "Carte des points de vente avec recherche, fiches magasin indexables, import CSV et synchronisation Google Sheets."
+msgstr ""
+
+#: includes/saito-hub/hub.php:98
+msgid "Swatches image, couleur ou icône pour les variations WooCommerce, prix à l'unité et badge de rupture de stock."
+msgstr ""
+
+#: includes/saito-hub/hub.php:106
+msgid "Mini-panier WooCommerce : barre de livraison gratuite, produits recommandés et boutons personnalisés."
+msgstr ""
+
+#: includes/saito-hub/hub.php:132
+msgid "Tableau de bord"
+msgstr ""
+
+#: includes/saito-hub/hub.php:140
+#: includes/saito-hub/hub.php:311
+msgid "Outils"
+msgstr ""
+
+#: includes/saito-hub/hub.php:236
+msgid "Les plugins Saito installés sur ce site, et ceux qui peuvent l'être."
+msgstr ""
+
+#. translators: %s: numéro de version.
+#: includes/saito-hub/hub.php:246
+#, php-format
+msgid "Actif — version %s"
+msgstr ""
+
+#: includes/saito-hub/hub.php:248
+msgid "Non installé ou inactif"
+msgstr ""
+
+#: includes/saito-hub/hub.php:255
+msgid "Réglages"
+msgstr ""
+
+#: includes/saito-hub/hub.php:257
+msgid "Voir sur WordPress.org"
+msgstr ""
+
+#: includes/saito-hub/hub.php:316
+msgid "CSS additionnel"
+msgstr ""
+
+#: includes/saito-hub/hub.php:317
+msgid "Ajouté sur toutes les pages du site, après les styles du thème et des plugins."
+msgstr ""
+
+#: includes/saito-hub/hub.php:320
+msgid "JavaScript additionnel"
+msgstr ""
+
+#: includes/saito-hub/hub.php:321
+msgid "Ajouté en bas de toutes les pages du site. Saisissez le code seul, sans balise <script>."
+msgstr ""
+
+#: includes/saito-hub/hub.php:323
+msgid "Votre compte n'est pas autorisé à publier du code JavaScript sur ce site : ce champ est en lecture seule."
+msgstr ""
+
+#: includes/saito-hub/hub.php:381
+msgid "Plugin"
+msgstr ""
+
+#: includes/saito-hub/hub.php:382
+msgid "Code source"
+msgstr ""
+
+#: includes/saito-hub/hub.php:384
+msgid "Notion"
+msgstr ""
+
+#: includes/saito-hub/hub.php:385
+msgid "WordPress.org"
+msgstr ""
+
+#: includes/saito-hub/hub.php:391
+msgid "Actif sur ce site"
+msgstr ""
+
+#: includes/saito-hub/hub.php:391
+msgid "Non installé"
+msgstr ""
+
+#: includes/saito-hub/hub.php:393
+msgid "Site de documentation"
+msgstr ""
+
+#: includes/saito-hub/hub.php:395
+msgid "Page du plugin"
+msgstr ""
+
+#: saito-swatches.php:134
+msgid "Saito Swatches requires WooCommerce to be installed and active."
+msgstr ""

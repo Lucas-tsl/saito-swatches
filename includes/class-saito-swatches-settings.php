@@ -39,6 +39,8 @@ final class Saito_Swatches_Settings {
 			'unit_simple'         => 1,
 			'unit_loop'           => 0,
 			'show_price'          => 0,
+			'button_price'        => 0,
+			'hover_image'         => 0,
 			'loop_swatches'       => 0,
 			'loop_limit'          => 5,
 			'loop_size'           => 22,
@@ -82,6 +84,7 @@ final class Saito_Swatches_Settings {
 			'unavailable_text'    => '',
 			'stock_badge_text'    => '',
 			'reset_text'          => '',
+			'button_template'     => '',
 
 			// Advanced.
 			'extra_classes'       => '',
@@ -185,7 +188,7 @@ final class Saito_Swatches_Settings {
 		$out      = array();
 
 		// Checkboxes: absent from the request means "off".
-		foreach ( array( 'enabled', 'hide_label', 'hide_reset', 'price_per_unit', 'unit_simple', 'unit_loop', 'show_price', 'loop_swatches', 'stock_badge', 'load_everywhere', 'navi_bridge', 'keep_data' ) as $key ) {
+		foreach ( array( 'enabled', 'hide_label', 'hide_reset', 'price_per_unit', 'unit_simple', 'unit_loop', 'show_price', 'button_price', 'hover_image', 'loop_swatches', 'stock_badge', 'load_everywhere', 'navi_bridge', 'keep_data' ) as $key ) {
 			$out[ $key ] = empty( $input[ $key ] ) ? 0 : 1;
 		}
 
@@ -231,7 +234,7 @@ final class Saito_Swatches_Settings {
 		}
 
 		// Texts.
-		foreach ( array( 'subtitle', 'alt_template', 'unit_template', 'unavailable_text', 'stock_badge_text', 'reset_text' ) as $key ) {
+		foreach ( array( 'subtitle', 'alt_template', 'unit_template', 'unavailable_text', 'stock_badge_text', 'reset_text', 'button_template' ) as $key ) {
 			$out[ $key ] = isset( $input[ $key ] ) ? sanitize_text_field( $input[ $key ] ) : '';
 		}
 

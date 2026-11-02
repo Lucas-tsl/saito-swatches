@@ -265,4 +265,82 @@
 			observe();
 		});
 	}
+
+	/* ---------- Price of the selected variation: add-to-cart button and [saito_swatches_price] ---------- */
+
+	// Price as displayed by WooCommerce for this variation (sale price only,
+	// the struck-through regular price is dropped).
+	function variationPriceText(variation) {
+		if (typeof variation.display_price === 'number' || variation.display_price) {
+			return formatPrice(parseFloat(variation.display_price));
+		}
+		var $tmp = $('<div>').html(variation.price_html || '');
+		$tmp.find('del, .screen-reader-text').remove();
+		return $.trim($tmp.text());
+	}
+
+	function buttonOf($form) {
+		return $form.find('.single_add_to_cart_button').first();
+	}
+
+	function setButtonPrice($form, variation) {
+		var $btn = buttonOf($form);
+		if (!$btn.length) {
+			return;
+		}
+		if (!$btn.data('saitoText')) {
+			$btn.data('saitoText', $.trim($btn.text()));
+		}
+		var text = String(cfg.buttonTemplate || '{text} – {price}');
+		if (text.indexOf('{price}') === -1) {
+			text += ' {price}';
+		}
+		$btn.text($.trim(text.replace('{text}', $btn.data('saitoText')).replace('{price}', variationPriceText(variation))));
+	}
+
+	function resetButton($form) {
+		var $btn = buttonOf($form);
+		if ($btn.length && $btn.data('saitoText')) {
+			$btn.text($btn.data('saitoText'));
+		}
+	}
+
+	function dynamicPrices($form) {
+		var id = String($form.data('product_id') || $form.find('[name="product_id"]').val() || '');
+		return $('.saito-swatches-dynamic-price').filter(function () {
+			return !id || String($(this).data('productId')) === id;
+		});
+	}
+
+	$(document).on('found_variation', 'form.variations_form', function (event, variation) {
+		var $form = $(this);
+		if (!variation) {
+			return;
+		}
+		if (cfg.buttonPrice) {
+			setButtonPrice($form, variation);
+		}
+		if (variation.price_html) {
+			dynamicPrices($form).each(function () {
+				var $el = $(this);
+				if (!$el.data('saitoHtml')) {
+					$el.data('saitoHtml', $el.html());
+				}
+				$el.html(variation.price_html);
+			});
+		}
+	});
+
+	$(document).on('reset_data', 'form.variations_form', function () {
+		var $form = $(this);
+		if (cfg.buttonPrice) {
+			resetButton($form);
+		}
+		dynamicPrices($form).each(function () {
+			var $el = $(this);
+			if ($el.data('saitoHtml')) {
+				$el.html($el.data('saitoHtml'));
+			}
+		});
+	});
 })(jQuery);
